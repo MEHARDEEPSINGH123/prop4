@@ -1,0 +1,98 @@
+# Horizon Living – UI/UX Guide
+
+## Design Vision
+Create an immersive community discovery experience, not a traditional real-estate portal.
+
+## Avoid
+- Top navigation bar
+- Standard hero banner
+- Property grid homepage
+- Marketplace-style listing pages
+- Generic real estate templates
+
+## Use Instead
+- Floating bottom navigation dock
+- Fullscreen storytelling sections
+- Scroll-driven experiences
+- Community-focused exploration
+- Interactive comparisons
+- Premium animations
+
+## Color Palette
+Background: #F7F4EF
+Primary: #18181B
+Secondary: #52525B
+Accent: #C46A3A
+Success: #567A60
+Card: #FFFFFF
+Border: #E7E5E4
+
+## Typography
+Headings: Space Grotesk
+Subheadings: Cormorant Garamond
+Body: Inter
+
+## Sections
+
+### 1. Intro Experience
+Fullscreen video/image.
+No navbar.
+
+### 2. Floating Navigation
+Bottom-center glass dock.
+Explore, Communities, Lifestyle, Investment, Compare, Book Tour.
+
+### 3. Community Explorer
+One community per screen.
+Scroll to reveal next community.
+
+### 4. Interactive District Discovery
+Map + animated district details.
+
+### 5. Lifestyle Experience
+Horizontal scrolling showcase.
+
+### 6. Smart Living
+Animated feature cards.
+
+### 7. Residence Showcase
+Fullscreen residence presentations.
+
+### 8. Comparison Studio
+Card-vs-card comparisons.
+
+### 9. Financing Studio
+Interactive financing calculator.
+
+### 10. Book Tour
+Calendar and appointment booking.
+
+### 11. Customer Stories
+Editorial testimonials.
+
+### 12. Final CTA
+Large immersive call-to-action.
+
+## Animation Stack
+- Framer Motion
+- GSAP
+- Lenis
+
+## Effects
+- Parallax
+- Scroll reveal
+- Sticky sections
+- Horizontal scroll
+- Image zoom
+- Text reveal
+- Smooth page transitions
+
+## Image Style
+- Contemporary architecture
+- Community living
+- Premium interiors
+- Smart homes
+- Singapore lifestyle
+
+## Goal
+Make the experience feel like Apple, Tesla, or an Awwwards-winning product website rather than a traditional property portal.

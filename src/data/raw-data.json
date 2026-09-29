@@ -1,0 +1,4139 @@
+{
+  "brand": "Horizon Living",
+  "communities": [
+    {
+      "community_id": "COM001",
+      "name": "Horizon Community 1",
+      "district": "District 1",
+      "starting_price_sgd": 925000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM002",
+      "name": "Horizon Community 2",
+      "district": "District 2",
+      "starting_price_sgd": 950000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM003",
+      "name": "Horizon Community 3",
+      "district": "District 3",
+      "starting_price_sgd": 975000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM004",
+      "name": "Horizon Community 4",
+      "district": "District 4",
+      "starting_price_sgd": 1000000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM005",
+      "name": "Horizon Community 5",
+      "district": "District 5",
+      "starting_price_sgd": 1025000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM006",
+      "name": "Horizon Community 6",
+      "district": "District 6",
+      "starting_price_sgd": 1050000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM007",
+      "name": "Horizon Community 7",
+      "district": "District 7",
+      "starting_price_sgd": 1075000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM008",
+      "name": "Horizon Community 8",
+      "district": "District 8",
+      "starting_price_sgd": 1100000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM009",
+      "name": "Horizon Community 9",
+      "district": "District 9",
+      "starting_price_sgd": 1125000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM010",
+      "name": "Horizon Community 10",
+      "district": "District 10",
+      "starting_price_sgd": 1150000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM011",
+      "name": "Horizon Community 11",
+      "district": "District 11",
+      "starting_price_sgd": 1175000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM012",
+      "name": "Horizon Community 12",
+      "district": "District 12",
+      "starting_price_sgd": 1200000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM013",
+      "name": "Horizon Community 13",
+      "district": "District 13",
+      "starting_price_sgd": 1225000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM014",
+      "name": "Horizon Community 14",
+      "district": "District 14",
+      "starting_price_sgd": 1250000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM015",
+      "name": "Horizon Community 15",
+      "district": "District 15",
+      "starting_price_sgd": 1275000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM016",
+      "name": "Horizon Community 16",
+      "district": "District 16",
+      "starting_price_sgd": 1300000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM017",
+      "name": "Horizon Community 17",
+      "district": "District 17",
+      "starting_price_sgd": 1325000,
+      "availability": "Limited Units"
+    },
+    {
+      "community_id": "COM018",
+      "name": "Horizon Community 18",
+      "district": "District 18",
+      "starting_price_sgd": 1350000,
+      "availability": "Now Selling"
+    },
+    {
+      "community_id": "COM019",
+      "name": "Horizon Community 19",
+      "district": "District 19",
+      "starting_price_sgd": 1375000,
+      "availability": "Launching Soon"
+    },
+    {
+      "community_id": "COM020",
+      "name": "Horizon Community 20",
+      "district": "District 20",
+      "starting_price_sgd": 1400000,
+      "availability": "Limited Units"
+    }
+  ],
+  "residences": [
+    {
+      "residence_id": "RES001",
+      "community_id": "COM001",
+      "name": "Residence 1",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 810,
+      "price_sgd": 815000
+    },
+    {
+      "residence_id": "RES002",
+      "community_id": "COM002",
+      "name": "Residence 2",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 820,
+      "price_sgd": 830000
+    },
+    {
+      "residence_id": "RES003",
+      "community_id": "COM003",
+      "name": "Residence 3",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 830,
+      "price_sgd": 845000
+    },
+    {
+      "residence_id": "RES004",
+      "community_id": "COM004",
+      "name": "Residence 4",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 840,
+      "price_sgd": 860000
+    },
+    {
+      "residence_id": "RES005",
+      "community_id": "COM005",
+      "name": "Residence 5",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 850,
+      "price_sgd": 875000
+    },
+    {
+      "residence_id": "RES006",
+      "community_id": "COM006",
+      "name": "Residence 6",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 860,
+      "price_sgd": 890000
+    },
+    {
+      "residence_id": "RES007",
+      "community_id": "COM007",
+      "name": "Residence 7",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 870,
+      "price_sgd": 905000
+    },
+    {
+      "residence_id": "RES008",
+      "community_id": "COM008",
+      "name": "Residence 8",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 880,
+      "price_sgd": 920000
+    },
+    {
+      "residence_id": "RES009",
+      "community_id": "COM009",
+      "name": "Residence 9",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 890,
+      "price_sgd": 935000
+    },
+    {
+      "residence_id": "RES010",
+      "community_id": "COM010",
+      "name": "Residence 10",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 900,
+      "price_sgd": 950000
+    },
+    {
+      "residence_id": "RES011",
+      "community_id": "COM011",
+      "name": "Residence 11",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 910,
+      "price_sgd": 965000
+    },
+    {
+      "residence_id": "RES012",
+      "community_id": "COM012",
+      "name": "Residence 12",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 920,
+      "price_sgd": 980000
+    },
+    {
+      "residence_id": "RES013",
+      "community_id": "COM013",
+      "name": "Residence 13",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 930,
+      "price_sgd": 995000
+    },
+    {
+      "residence_id": "RES014",
+      "community_id": "COM014",
+      "name": "Residence 14",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 940,
+      "price_sgd": 1010000
+    },
+    {
+      "residence_id": "RES015",
+      "community_id": "COM015",
+      "name": "Residence 15",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 950,
+      "price_sgd": 1025000
+    },
+    {
+      "residence_id": "RES016",
+      "community_id": "COM016",
+      "name": "Residence 16",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 960,
+      "price_sgd": 1040000
+    },
+    {
+      "residence_id": "RES017",
+      "community_id": "COM017",
+      "name": "Residence 17",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 970,
+      "price_sgd": 1055000
+    },
+    {
+      "residence_id": "RES018",
+      "community_id": "COM018",
+      "name": "Residence 18",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 980,
+      "price_sgd": 1070000
+    },
+    {
+      "residence_id": "RES019",
+      "community_id": "COM019",
+      "name": "Residence 19",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 990,
+      "price_sgd": 1085000
+    },
+    {
+      "residence_id": "RES020",
+      "community_id": "COM020",
+      "name": "Residence 20",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 1000,
+      "price_sgd": 1100000
+    },
+    {
+      "residence_id": "RES021",
+      "community_id": "COM001",
+      "name": "Residence 21",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1010,
+      "price_sgd": 1115000
+    },
+    {
+      "residence_id": "RES022",
+      "community_id": "COM002",
+      "name": "Residence 22",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 1020,
+      "price_sgd": 1130000
+    },
+    {
+      "residence_id": "RES023",
+      "community_id": "COM003",
+      "name": "Residence 23",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 1030,
+      "price_sgd": 1145000
+    },
+    {
+      "residence_id": "RES024",
+      "community_id": "COM004",
+      "name": "Residence 24",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 1040,
+      "price_sgd": 1160000
+    },
+    {
+      "residence_id": "RES025",
+      "community_id": "COM005",
+      "name": "Residence 25",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 1050,
+      "price_sgd": 1175000
+    },
+    {
+      "residence_id": "RES026",
+      "community_id": "COM006",
+      "name": "Residence 26",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 1060,
+      "price_sgd": 1190000
+    },
+    {
+      "residence_id": "RES027",
+      "community_id": "COM007",
+      "name": "Residence 27",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 1070,
+      "price_sgd": 1205000
+    },
+    {
+      "residence_id": "RES028",
+      "community_id": "COM008",
+      "name": "Residence 28",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 1080,
+      "price_sgd": 1220000
+    },
+    {
+      "residence_id": "RES029",
+      "community_id": "COM009",
+      "name": "Residence 29",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 1090,
+      "price_sgd": 1235000
+    },
+    {
+      "residence_id": "RES030",
+      "community_id": "COM010",
+      "name": "Residence 30",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 1100,
+      "price_sgd": 1250000
+    },
+    {
+      "residence_id": "RES031",
+      "community_id": "COM011",
+      "name": "Residence 31",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 1110,
+      "price_sgd": 1265000
+    },
+    {
+      "residence_id": "RES032",
+      "community_id": "COM012",
+      "name": "Residence 32",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 1120,
+      "price_sgd": 1280000
+    },
+    {
+      "residence_id": "RES033",
+      "community_id": "COM013",
+      "name": "Residence 33",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 1130,
+      "price_sgd": 1295000
+    },
+    {
+      "residence_id": "RES034",
+      "community_id": "COM014",
+      "name": "Residence 34",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 1140,
+      "price_sgd": 1310000
+    },
+    {
+      "residence_id": "RES035",
+      "community_id": "COM015",
+      "name": "Residence 35",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 1150,
+      "price_sgd": 1325000
+    },
+    {
+      "residence_id": "RES036",
+      "community_id": "COM016",
+      "name": "Residence 36",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1160,
+      "price_sgd": 1340000
+    },
+    {
+      "residence_id": "RES037",
+      "community_id": "COM017",
+      "name": "Residence 37",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1170,
+      "price_sgd": 1355000
+    },
+    {
+      "residence_id": "RES038",
+      "community_id": "COM018",
+      "name": "Residence 38",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 1180,
+      "price_sgd": 1370000
+    },
+    {
+      "residence_id": "RES039",
+      "community_id": "COM019",
+      "name": "Residence 39",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 1190,
+      "price_sgd": 1385000
+    },
+    {
+      "residence_id": "RES040",
+      "community_id": "COM020",
+      "name": "Residence 40",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 1200,
+      "price_sgd": 1400000
+    },
+    {
+      "residence_id": "RES041",
+      "community_id": "COM001",
+      "name": "Residence 41",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1210,
+      "price_sgd": 1415000
+    },
+    {
+      "residence_id": "RES042",
+      "community_id": "COM002",
+      "name": "Residence 42",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 1220,
+      "price_sgd": 1430000
+    },
+    {
+      "residence_id": "RES043",
+      "community_id": "COM003",
+      "name": "Residence 43",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 1230,
+      "price_sgd": 1445000
+    },
+    {
+      "residence_id": "RES044",
+      "community_id": "COM004",
+      "name": "Residence 44",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 1240,
+      "price_sgd": 1460000
+    },
+    {
+      "residence_id": "RES045",
+      "community_id": "COM005",
+      "name": "Residence 45",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 1250,
+      "price_sgd": 1475000
+    },
+    {
+      "residence_id": "RES046",
+      "community_id": "COM006",
+      "name": "Residence 46",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 1260,
+      "price_sgd": 1490000
+    },
+    {
+      "residence_id": "RES047",
+      "community_id": "COM007",
+      "name": "Residence 47",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 1270,
+      "price_sgd": 1505000
+    },
+    {
+      "residence_id": "RES048",
+      "community_id": "COM008",
+      "name": "Residence 48",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 1280,
+      "price_sgd": 1520000
+    },
+    {
+      "residence_id": "RES049",
+      "community_id": "COM009",
+      "name": "Residence 49",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 1290,
+      "price_sgd": 1535000
+    },
+    {
+      "residence_id": "RES050",
+      "community_id": "COM010",
+      "name": "Residence 50",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 1300,
+      "price_sgd": 1550000
+    },
+    {
+      "residence_id": "RES051",
+      "community_id": "COM011",
+      "name": "Residence 51",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 1310,
+      "price_sgd": 1565000
+    },
+    {
+      "residence_id": "RES052",
+      "community_id": "COM012",
+      "name": "Residence 52",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 1320,
+      "price_sgd": 1580000
+    },
+    {
+      "residence_id": "RES053",
+      "community_id": "COM013",
+      "name": "Residence 53",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 1330,
+      "price_sgd": 1595000
+    },
+    {
+      "residence_id": "RES054",
+      "community_id": "COM014",
+      "name": "Residence 54",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 1340,
+      "price_sgd": 1610000
+    },
+    {
+      "residence_id": "RES055",
+      "community_id": "COM015",
+      "name": "Residence 55",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 1350,
+      "price_sgd": 1625000
+    },
+    {
+      "residence_id": "RES056",
+      "community_id": "COM016",
+      "name": "Residence 56",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1360,
+      "price_sgd": 1640000
+    },
+    {
+      "residence_id": "RES057",
+      "community_id": "COM017",
+      "name": "Residence 57",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1370,
+      "price_sgd": 1655000
+    },
+    {
+      "residence_id": "RES058",
+      "community_id": "COM018",
+      "name": "Residence 58",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 1380,
+      "price_sgd": 1670000
+    },
+    {
+      "residence_id": "RES059",
+      "community_id": "COM019",
+      "name": "Residence 59",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 1390,
+      "price_sgd": 1685000
+    },
+    {
+      "residence_id": "RES060",
+      "community_id": "COM020",
+      "name": "Residence 60",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 1400,
+      "price_sgd": 1700000
+    },
+    {
+      "residence_id": "RES061",
+      "community_id": "COM001",
+      "name": "Residence 61",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1410,
+      "price_sgd": 1715000
+    },
+    {
+      "residence_id": "RES062",
+      "community_id": "COM002",
+      "name": "Residence 62",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 1420,
+      "price_sgd": 1730000
+    },
+    {
+      "residence_id": "RES063",
+      "community_id": "COM003",
+      "name": "Residence 63",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 1430,
+      "price_sgd": 1745000
+    },
+    {
+      "residence_id": "RES064",
+      "community_id": "COM004",
+      "name": "Residence 64",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 1440,
+      "price_sgd": 1760000
+    },
+    {
+      "residence_id": "RES065",
+      "community_id": "COM005",
+      "name": "Residence 65",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 1450,
+      "price_sgd": 1775000
+    },
+    {
+      "residence_id": "RES066",
+      "community_id": "COM006",
+      "name": "Residence 66",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 1460,
+      "price_sgd": 1790000
+    },
+    {
+      "residence_id": "RES067",
+      "community_id": "COM007",
+      "name": "Residence 67",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 1470,
+      "price_sgd": 1805000
+    },
+    {
+      "residence_id": "RES068",
+      "community_id": "COM008",
+      "name": "Residence 68",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 1480,
+      "price_sgd": 1820000
+    },
+    {
+      "residence_id": "RES069",
+      "community_id": "COM009",
+      "name": "Residence 69",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 1490,
+      "price_sgd": 1835000
+    },
+    {
+      "residence_id": "RES070",
+      "community_id": "COM010",
+      "name": "Residence 70",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 1500,
+      "price_sgd": 1850000
+    },
+    {
+      "residence_id": "RES071",
+      "community_id": "COM011",
+      "name": "Residence 71",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 1510,
+      "price_sgd": 1865000
+    },
+    {
+      "residence_id": "RES072",
+      "community_id": "COM012",
+      "name": "Residence 72",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 1520,
+      "price_sgd": 1880000
+    },
+    {
+      "residence_id": "RES073",
+      "community_id": "COM013",
+      "name": "Residence 73",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 1530,
+      "price_sgd": 1895000
+    },
+    {
+      "residence_id": "RES074",
+      "community_id": "COM014",
+      "name": "Residence 74",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 1540,
+      "price_sgd": 1910000
+    },
+    {
+      "residence_id": "RES075",
+      "community_id": "COM015",
+      "name": "Residence 75",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 1550,
+      "price_sgd": 1925000
+    },
+    {
+      "residence_id": "RES076",
+      "community_id": "COM016",
+      "name": "Residence 76",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1560,
+      "price_sgd": 1940000
+    },
+    {
+      "residence_id": "RES077",
+      "community_id": "COM017",
+      "name": "Residence 77",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1570,
+      "price_sgd": 1955000
+    },
+    {
+      "residence_id": "RES078",
+      "community_id": "COM018",
+      "name": "Residence 78",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 1580,
+      "price_sgd": 1970000
+    },
+    {
+      "residence_id": "RES079",
+      "community_id": "COM019",
+      "name": "Residence 79",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 1590,
+      "price_sgd": 1985000
+    },
+    {
+      "residence_id": "RES080",
+      "community_id": "COM020",
+      "name": "Residence 80",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 1600,
+      "price_sgd": 2000000
+    },
+    {
+      "residence_id": "RES081",
+      "community_id": "COM001",
+      "name": "Residence 81",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1610,
+      "price_sgd": 2015000
+    },
+    {
+      "residence_id": "RES082",
+      "community_id": "COM002",
+      "name": "Residence 82",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 1620,
+      "price_sgd": 2030000
+    },
+    {
+      "residence_id": "RES083",
+      "community_id": "COM003",
+      "name": "Residence 83",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 1630,
+      "price_sgd": 2045000
+    },
+    {
+      "residence_id": "RES084",
+      "community_id": "COM004",
+      "name": "Residence 84",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 1640,
+      "price_sgd": 2060000
+    },
+    {
+      "residence_id": "RES085",
+      "community_id": "COM005",
+      "name": "Residence 85",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 1650,
+      "price_sgd": 2075000
+    },
+    {
+      "residence_id": "RES086",
+      "community_id": "COM006",
+      "name": "Residence 86",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 1660,
+      "price_sgd": 2090000
+    },
+    {
+      "residence_id": "RES087",
+      "community_id": "COM007",
+      "name": "Residence 87",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 1670,
+      "price_sgd": 2105000
+    },
+    {
+      "residence_id": "RES088",
+      "community_id": "COM008",
+      "name": "Residence 88",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 1680,
+      "price_sgd": 2120000
+    },
+    {
+      "residence_id": "RES089",
+      "community_id": "COM009",
+      "name": "Residence 89",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 1690,
+      "price_sgd": 2135000
+    },
+    {
+      "residence_id": "RES090",
+      "community_id": "COM010",
+      "name": "Residence 90",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 1700,
+      "price_sgd": 2150000
+    },
+    {
+      "residence_id": "RES091",
+      "community_id": "COM011",
+      "name": "Residence 91",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 1710,
+      "price_sgd": 2165000
+    },
+    {
+      "residence_id": "RES092",
+      "community_id": "COM012",
+      "name": "Residence 92",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 1720,
+      "price_sgd": 2180000
+    },
+    {
+      "residence_id": "RES093",
+      "community_id": "COM013",
+      "name": "Residence 93",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 1730,
+      "price_sgd": 2195000
+    },
+    {
+      "residence_id": "RES094",
+      "community_id": "COM014",
+      "name": "Residence 94",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 1740,
+      "price_sgd": 2210000
+    },
+    {
+      "residence_id": "RES095",
+      "community_id": "COM015",
+      "name": "Residence 95",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 1750,
+      "price_sgd": 2225000
+    },
+    {
+      "residence_id": "RES096",
+      "community_id": "COM016",
+      "name": "Residence 96",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1760,
+      "price_sgd": 2240000
+    },
+    {
+      "residence_id": "RES097",
+      "community_id": "COM017",
+      "name": "Residence 97",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1770,
+      "price_sgd": 2255000
+    },
+    {
+      "residence_id": "RES098",
+      "community_id": "COM018",
+      "name": "Residence 98",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 1780,
+      "price_sgd": 2270000
+    },
+    {
+      "residence_id": "RES099",
+      "community_id": "COM019",
+      "name": "Residence 99",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 1790,
+      "price_sgd": 2285000
+    },
+    {
+      "residence_id": "RES100",
+      "community_id": "COM020",
+      "name": "Residence 100",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 1800,
+      "price_sgd": 2300000
+    },
+    {
+      "residence_id": "RES101",
+      "community_id": "COM001",
+      "name": "Residence 101",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1810,
+      "price_sgd": 2315000
+    },
+    {
+      "residence_id": "RES102",
+      "community_id": "COM002",
+      "name": "Residence 102",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area_sqft": 1820,
+      "price_sgd": 2330000
+    },
+    {
+      "residence_id": "RES103",
+      "community_id": "COM003",
+      "name": "Residence 103",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_sqft": 1830,
+      "price_sgd": 2345000
+    },
+    {
+      "residence_id": "RES104",
+      "community_id": "COM004",
+      "name": "Residence 104",
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "area_sqft": 1840,
+      "price_sgd": 2360000
+    },
+    {
+      "residence_id": "RES105",
+      "community_id": "COM005",
+      "name": "Residence 105",
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area_sqft": 1850,
+      "price_sgd": 2375000
+    },
+    {
+      "residence_id": "RES106",
+      "community_id": "COM006",
+      "name": "Residence 106",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "area_sqft": 1860,
+      "price_sgd": 2390000
+    },
+    {
+      "residence_id": "RES107",
+      "community_id": "COM007",
+      "name": "Residence 107",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "area_sqft": 1870,
+      "price_sgd": 2405000
+    },
+    {
+      "residence_id": "RES108",
+      "community_id": "COM008",
+      "name": "Residence 108",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "area_sqft": 1880,
+      "price_sgd": 2420000
+    },
+    {
+      "residence_id": "RES109",
+      "community_id": "COM009",
+      "name": "Residence 109",
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "area_sqft": 1890,
+      "price_sgd": 2435000
+    },
+    {
+      "residence_id": "RES110",
+      "community_id": "COM010",
+      "name": "Residence 110",
+      "bedrooms": 1,
+      "bathrooms": 3,
+      "area_sqft": 1900,
+      "price_sgd": 2450000
+    },
+    {
+      "residence_id": "RES111",
+      "community_id": "COM011",
+      "name": "Residence 111",
+      "bedrooms": 2,
+      "bathrooms": 4,
+      "area_sqft": 1910,
+      "price_sgd": 2465000
+    },
+    {
+      "residence_id": "RES112",
+      "community_id": "COM012",
+      "name": "Residence 112",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area_sqft": 1920,
+      "price_sgd": 2480000
+    },
+    {
+      "residence_id": "RES113",
+      "community_id": "COM013",
+      "name": "Residence 113",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_sqft": 1930,
+      "price_sgd": 2495000
+    },
+    {
+      "residence_id": "RES114",
+      "community_id": "COM014",
+      "name": "Residence 114",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "area_sqft": 1940,
+      "price_sgd": 2510000
+    },
+    {
+      "residence_id": "RES115",
+      "community_id": "COM015",
+      "name": "Residence 115",
+      "bedrooms": 1,
+      "bathrooms": 4,
+      "area_sqft": 1950,
+      "price_sgd": 2525000
+    },
+    {
+      "residence_id": "RES116",
+      "community_id": "COM016",
+      "name": "Residence 116",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1960,
+      "price_sgd": 2540000
+    },
+    {
+      "residence_id": "RES117",
+      "community_id": "COM017",
+      "name": "Residence 117",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 1970,
+      "price_sgd": 2555000
+    },
+    {
+      "residence_id": "RES118",
+      "community_id": "COM018",
+      "name": "Residence 118",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 1980,
+      "price_sgd": 2570000
+    },
+    {
+      "residence_id": "RES119",
+      "community_id": "COM019",
+      "name": "Residence 119",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 1990,
+      "price_sgd": 2585000
+    },
+    {
+      "residence_id": "RES120",
+      "community_id": "COM020",
+      "name": "Residence 120",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 2000,
+      "price_sgd": 2600000
+    }
+  ],
+  "districts": [
+    {
+      "district_id": "D001",
+      "name": "District 1"
+    },
+    {
+      "district_id": "D002",
+      "name": "District 2"
+    },
+    {
+      "district_id": "D003",
+      "name": "District 3"
+    },
+    {
+      "district_id": "D004",
+      "name": "District 4"
+    },
+    {
+      "district_id": "D005",
+      "name": "District 5"
+    },
+    {
+      "district_id": "D006",
+      "name": "District 6"
+    },
+    {
+      "district_id": "D007",
+      "name": "District 7"
+    },
+    {
+      "district_id": "D008",
+      "name": "District 8"
+    },
+    {
+      "district_id": "D009",
+      "name": "District 9"
+    },
+    {
+      "district_id": "D010",
+      "name": "District 10"
+    },
+    {
+      "district_id": "D011",
+      "name": "District 11"
+    },
+    {
+      "district_id": "D012",
+      "name": "District 12"
+    },
+    {
+      "district_id": "D013",
+      "name": "District 13"
+    },
+    {
+      "district_id": "D014",
+      "name": "District 14"
+    },
+    {
+      "district_id": "D015",
+      "name": "District 15"
+    },
+    {
+      "district_id": "D016",
+      "name": "District 16"
+    },
+    {
+      "district_id": "D017",
+      "name": "District 17"
+    },
+    {
+      "district_id": "D018",
+      "name": "District 18"
+    },
+    {
+      "district_id": "D019",
+      "name": "District 19"
+    },
+    {
+      "district_id": "D020",
+      "name": "District 20"
+    },
+    {
+      "district_id": "D021",
+      "name": "District 21"
+    },
+    {
+      "district_id": "D022",
+      "name": "District 22"
+    },
+    {
+      "district_id": "D023",
+      "name": "District 23"
+    },
+    {
+      "district_id": "D024",
+      "name": "District 24"
+    },
+    {
+      "district_id": "D025",
+      "name": "District 25"
+    },
+    {
+      "district_id": "D026",
+      "name": "District 26"
+    },
+    {
+      "district_id": "D027",
+      "name": "District 27"
+    },
+    {
+      "district_id": "D028",
+      "name": "District 28"
+    },
+    {
+      "district_id": "D029",
+      "name": "District 29"
+    },
+    {
+      "district_id": "D030",
+      "name": "District 30"
+    }
+  ],
+  "amenities": [
+    {
+      "id": "AM001",
+      "name": "Amenity 1"
+    },
+    {
+      "id": "AM002",
+      "name": "Amenity 2"
+    },
+    {
+      "id": "AM003",
+      "name": "Amenity 3"
+    },
+    {
+      "id": "AM004",
+      "name": "Amenity 4"
+    },
+    {
+      "id": "AM005",
+      "name": "Amenity 5"
+    },
+    {
+      "id": "AM006",
+      "name": "Amenity 6"
+    },
+    {
+      "id": "AM007",
+      "name": "Amenity 7"
+    },
+    {
+      "id": "AM008",
+      "name": "Amenity 8"
+    },
+    {
+      "id": "AM009",
+      "name": "Amenity 9"
+    },
+    {
+      "id": "AM010",
+      "name": "Amenity 10"
+    },
+    {
+      "id": "AM011",
+      "name": "Amenity 11"
+    },
+    {
+      "id": "AM012",
+      "name": "Amenity 12"
+    },
+    {
+      "id": "AM013",
+      "name": "Amenity 13"
+    },
+    {
+      "id": "AM014",
+      "name": "Amenity 14"
+    },
+    {
+      "id": "AM015",
+      "name": "Amenity 15"
+    },
+    {
+      "id": "AM016",
+      "name": "Amenity 16"
+    },
+    {
+      "id": "AM017",
+      "name": "Amenity 17"
+    },
+    {
+      "id": "AM018",
+      "name": "Amenity 18"
+    },
+    {
+      "id": "AM019",
+      "name": "Amenity 19"
+    },
+    {
+      "id": "AM020",
+      "name": "Amenity 20"
+    },
+    {
+      "id": "AM021",
+      "name": "Amenity 21"
+    },
+    {
+      "id": "AM022",
+      "name": "Amenity 22"
+    },
+    {
+      "id": "AM023",
+      "name": "Amenity 23"
+    },
+    {
+      "id": "AM024",
+      "name": "Amenity 24"
+    },
+    {
+      "id": "AM025",
+      "name": "Amenity 25"
+    },
+    {
+      "id": "AM026",
+      "name": "Amenity 26"
+    },
+    {
+      "id": "AM027",
+      "name": "Amenity 27"
+    },
+    {
+      "id": "AM028",
+      "name": "Amenity 28"
+    },
+    {
+      "id": "AM029",
+      "name": "Amenity 29"
+    },
+    {
+      "id": "AM030",
+      "name": "Amenity 30"
+    },
+    {
+      "id": "AM031",
+      "name": "Amenity 31"
+    },
+    {
+      "id": "AM032",
+      "name": "Amenity 32"
+    },
+    {
+      "id": "AM033",
+      "name": "Amenity 33"
+    },
+    {
+      "id": "AM034",
+      "name": "Amenity 34"
+    },
+    {
+      "id": "AM035",
+      "name": "Amenity 35"
+    },
+    {
+      "id": "AM036",
+      "name": "Amenity 36"
+    },
+    {
+      "id": "AM037",
+      "name": "Amenity 37"
+    },
+    {
+      "id": "AM038",
+      "name": "Amenity 38"
+    },
+    {
+      "id": "AM039",
+      "name": "Amenity 39"
+    },
+    {
+      "id": "AM040",
+      "name": "Amenity 40"
+    },
+    {
+      "id": "AM041",
+      "name": "Amenity 41"
+    },
+    {
+      "id": "AM042",
+      "name": "Amenity 42"
+    },
+    {
+      "id": "AM043",
+      "name": "Amenity 43"
+    },
+    {
+      "id": "AM044",
+      "name": "Amenity 44"
+    },
+    {
+      "id": "AM045",
+      "name": "Amenity 45"
+    },
+    {
+      "id": "AM046",
+      "name": "Amenity 46"
+    },
+    {
+      "id": "AM047",
+      "name": "Amenity 47"
+    },
+    {
+      "id": "AM048",
+      "name": "Amenity 48"
+    },
+    {
+      "id": "AM049",
+      "name": "Amenity 49"
+    },
+    {
+      "id": "AM050",
+      "name": "Amenity 50"
+    },
+    {
+      "id": "AM051",
+      "name": "Amenity 51"
+    },
+    {
+      "id": "AM052",
+      "name": "Amenity 52"
+    },
+    {
+      "id": "AM053",
+      "name": "Amenity 53"
+    },
+    {
+      "id": "AM054",
+      "name": "Amenity 54"
+    },
+    {
+      "id": "AM055",
+      "name": "Amenity 55"
+    },
+    {
+      "id": "AM056",
+      "name": "Amenity 56"
+    },
+    {
+      "id": "AM057",
+      "name": "Amenity 57"
+    },
+    {
+      "id": "AM058",
+      "name": "Amenity 58"
+    },
+    {
+      "id": "AM059",
+      "name": "Amenity 59"
+    },
+    {
+      "id": "AM060",
+      "name": "Amenity 60"
+    },
+    {
+      "id": "AM061",
+      "name": "Amenity 61"
+    },
+    {
+      "id": "AM062",
+      "name": "Amenity 62"
+    },
+    {
+      "id": "AM063",
+      "name": "Amenity 63"
+    },
+    {
+      "id": "AM064",
+      "name": "Amenity 64"
+    },
+    {
+      "id": "AM065",
+      "name": "Amenity 65"
+    },
+    {
+      "id": "AM066",
+      "name": "Amenity 66"
+    },
+    {
+      "id": "AM067",
+      "name": "Amenity 67"
+    },
+    {
+      "id": "AM068",
+      "name": "Amenity 68"
+    },
+    {
+      "id": "AM069",
+      "name": "Amenity 69"
+    },
+    {
+      "id": "AM070",
+      "name": "Amenity 70"
+    },
+    {
+      "id": "AM071",
+      "name": "Amenity 71"
+    },
+    {
+      "id": "AM072",
+      "name": "Amenity 72"
+    },
+    {
+      "id": "AM073",
+      "name": "Amenity 73"
+    },
+    {
+      "id": "AM074",
+      "name": "Amenity 74"
+    },
+    {
+      "id": "AM075",
+      "name": "Amenity 75"
+    },
+    {
+      "id": "AM076",
+      "name": "Amenity 76"
+    },
+    {
+      "id": "AM077",
+      "name": "Amenity 77"
+    },
+    {
+      "id": "AM078",
+      "name": "Amenity 78"
+    },
+    {
+      "id": "AM079",
+      "name": "Amenity 79"
+    },
+    {
+      "id": "AM080",
+      "name": "Amenity 80"
+    },
+    {
+      "id": "AM081",
+      "name": "Amenity 81"
+    },
+    {
+      "id": "AM082",
+      "name": "Amenity 82"
+    },
+    {
+      "id": "AM083",
+      "name": "Amenity 83"
+    },
+    {
+      "id": "AM084",
+      "name": "Amenity 84"
+    },
+    {
+      "id": "AM085",
+      "name": "Amenity 85"
+    },
+    {
+      "id": "AM086",
+      "name": "Amenity 86"
+    },
+    {
+      "id": "AM087",
+      "name": "Amenity 87"
+    },
+    {
+      "id": "AM088",
+      "name": "Amenity 88"
+    },
+    {
+      "id": "AM089",
+      "name": "Amenity 89"
+    },
+    {
+      "id": "AM090",
+      "name": "Amenity 90"
+    },
+    {
+      "id": "AM091",
+      "name": "Amenity 91"
+    },
+    {
+      "id": "AM092",
+      "name": "Amenity 92"
+    },
+    {
+      "id": "AM093",
+      "name": "Amenity 93"
+    },
+    {
+      "id": "AM094",
+      "name": "Amenity 94"
+    },
+    {
+      "id": "AM095",
+      "name": "Amenity 95"
+    },
+    {
+      "id": "AM096",
+      "name": "Amenity 96"
+    },
+    {
+      "id": "AM097",
+      "name": "Amenity 97"
+    },
+    {
+      "id": "AM098",
+      "name": "Amenity 98"
+    },
+    {
+      "id": "AM099",
+      "name": "Amenity 99"
+    },
+    {
+      "id": "AM100",
+      "name": "Amenity 100"
+    }
+  ],
+  "schools": [
+    {
+      "id": "SCH001",
+      "name": "School 1"
+    },
+    {
+      "id": "SCH002",
+      "name": "School 2"
+    },
+    {
+      "id": "SCH003",
+      "name": "School 3"
+    },
+    {
+      "id": "SCH004",
+      "name": "School 4"
+    },
+    {
+      "id": "SCH005",
+      "name": "School 5"
+    },
+    {
+      "id": "SCH006",
+      "name": "School 6"
+    },
+    {
+      "id": "SCH007",
+      "name": "School 7"
+    },
+    {
+      "id": "SCH008",
+      "name": "School 8"
+    },
+    {
+      "id": "SCH009",
+      "name": "School 9"
+    },
+    {
+      "id": "SCH010",
+      "name": "School 10"
+    },
+    {
+      "id": "SCH011",
+      "name": "School 11"
+    },
+    {
+      "id": "SCH012",
+      "name": "School 12"
+    },
+    {
+      "id": "SCH013",
+      "name": "School 13"
+    },
+    {
+      "id": "SCH014",
+      "name": "School 14"
+    },
+    {
+      "id": "SCH015",
+      "name": "School 15"
+    },
+    {
+      "id": "SCH016",
+      "name": "School 16"
+    },
+    {
+      "id": "SCH017",
+      "name": "School 17"
+    },
+    {
+      "id": "SCH018",
+      "name": "School 18"
+    },
+    {
+      "id": "SCH019",
+      "name": "School 19"
+    },
+    {
+      "id": "SCH020",
+      "name": "School 20"
+    },
+    {
+      "id": "SCH021",
+      "name": "School 21"
+    },
+    {
+      "id": "SCH022",
+      "name": "School 22"
+    },
+    {
+      "id": "SCH023",
+      "name": "School 23"
+    },
+    {
+      "id": "SCH024",
+      "name": "School 24"
+    },
+    {
+      "id": "SCH025",
+      "name": "School 25"
+    },
+    {
+      "id": "SCH026",
+      "name": "School 26"
+    },
+    {
+      "id": "SCH027",
+      "name": "School 27"
+    },
+    {
+      "id": "SCH028",
+      "name": "School 28"
+    },
+    {
+      "id": "SCH029",
+      "name": "School 29"
+    },
+    {
+      "id": "SCH030",
+      "name": "School 30"
+    },
+    {
+      "id": "SCH031",
+      "name": "School 31"
+    },
+    {
+      "id": "SCH032",
+      "name": "School 32"
+    },
+    {
+      "id": "SCH033",
+      "name": "School 33"
+    },
+    {
+      "id": "SCH034",
+      "name": "School 34"
+    },
+    {
+      "id": "SCH035",
+      "name": "School 35"
+    },
+    {
+      "id": "SCH036",
+      "name": "School 36"
+    },
+    {
+      "id": "SCH037",
+      "name": "School 37"
+    },
+    {
+      "id": "SCH038",
+      "name": "School 38"
+    },
+    {
+      "id": "SCH039",
+      "name": "School 39"
+    },
+    {
+      "id": "SCH040",
+      "name": "School 40"
+    },
+    {
+      "id": "SCH041",
+      "name": "School 41"
+    },
+    {
+      "id": "SCH042",
+      "name": "School 42"
+    },
+    {
+      "id": "SCH043",
+      "name": "School 43"
+    },
+    {
+      "id": "SCH044",
+      "name": "School 44"
+    },
+    {
+      "id": "SCH045",
+      "name": "School 45"
+    },
+    {
+      "id": "SCH046",
+      "name": "School 46"
+    },
+    {
+      "id": "SCH047",
+      "name": "School 47"
+    },
+    {
+      "id": "SCH048",
+      "name": "School 48"
+    },
+    {
+      "id": "SCH049",
+      "name": "School 49"
+    },
+    {
+      "id": "SCH050",
+      "name": "School 50"
+    }
+  ],
+  "transport_connections": [
+    {
+      "id": "TR001",
+      "name": "Transport Hub 1"
+    },
+    {
+      "id": "TR002",
+      "name": "Transport Hub 2"
+    },
+    {
+      "id": "TR003",
+      "name": "Transport Hub 3"
+    },
+    {
+      "id": "TR004",
+      "name": "Transport Hub 4"
+    },
+    {
+      "id": "TR005",
+      "name": "Transport Hub 5"
+    },
+    {
+      "id": "TR006",
+      "name": "Transport Hub 6"
+    },
+    {
+      "id": "TR007",
+      "name": "Transport Hub 7"
+    },
+    {
+      "id": "TR008",
+      "name": "Transport Hub 8"
+    },
+    {
+      "id": "TR009",
+      "name": "Transport Hub 9"
+    },
+    {
+      "id": "TR010",
+      "name": "Transport Hub 10"
+    },
+    {
+      "id": "TR011",
+      "name": "Transport Hub 11"
+    },
+    {
+      "id": "TR012",
+      "name": "Transport Hub 12"
+    },
+    {
+      "id": "TR013",
+      "name": "Transport Hub 13"
+    },
+    {
+      "id": "TR014",
+      "name": "Transport Hub 14"
+    },
+    {
+      "id": "TR015",
+      "name": "Transport Hub 15"
+    },
+    {
+      "id": "TR016",
+      "name": "Transport Hub 16"
+    },
+    {
+      "id": "TR017",
+      "name": "Transport Hub 17"
+    },
+    {
+      "id": "TR018",
+      "name": "Transport Hub 18"
+    },
+    {
+      "id": "TR019",
+      "name": "Transport Hub 19"
+    },
+    {
+      "id": "TR020",
+      "name": "Transport Hub 20"
+    },
+    {
+      "id": "TR021",
+      "name": "Transport Hub 21"
+    },
+    {
+      "id": "TR022",
+      "name": "Transport Hub 22"
+    },
+    {
+      "id": "TR023",
+      "name": "Transport Hub 23"
+    },
+    {
+      "id": "TR024",
+      "name": "Transport Hub 24"
+    },
+    {
+      "id": "TR025",
+      "name": "Transport Hub 25"
+    },
+    {
+      "id": "TR026",
+      "name": "Transport Hub 26"
+    },
+    {
+      "id": "TR027",
+      "name": "Transport Hub 27"
+    },
+    {
+      "id": "TR028",
+      "name": "Transport Hub 28"
+    },
+    {
+      "id": "TR029",
+      "name": "Transport Hub 29"
+    },
+    {
+      "id": "TR030",
+      "name": "Transport Hub 30"
+    },
+    {
+      "id": "TR031",
+      "name": "Transport Hub 31"
+    },
+    {
+      "id": "TR032",
+      "name": "Transport Hub 32"
+    },
+    {
+      "id": "TR033",
+      "name": "Transport Hub 33"
+    },
+    {
+      "id": "TR034",
+      "name": "Transport Hub 34"
+    },
+    {
+      "id": "TR035",
+      "name": "Transport Hub 35"
+    },
+    {
+      "id": "TR036",
+      "name": "Transport Hub 36"
+    },
+    {
+      "id": "TR037",
+      "name": "Transport Hub 37"
+    },
+    {
+      "id": "TR038",
+      "name": "Transport Hub 38"
+    },
+    {
+      "id": "TR039",
+      "name": "Transport Hub 39"
+    },
+    {
+      "id": "TR040",
+      "name": "Transport Hub 40"
+    },
+    {
+      "id": "TR041",
+      "name": "Transport Hub 41"
+    },
+    {
+      "id": "TR042",
+      "name": "Transport Hub 42"
+    },
+    {
+      "id": "TR043",
+      "name": "Transport Hub 43"
+    },
+    {
+      "id": "TR044",
+      "name": "Transport Hub 44"
+    },
+    {
+      "id": "TR045",
+      "name": "Transport Hub 45"
+    },
+    {
+      "id": "TR046",
+      "name": "Transport Hub 46"
+    },
+    {
+      "id": "TR047",
+      "name": "Transport Hub 47"
+    },
+    {
+      "id": "TR048",
+      "name": "Transport Hub 48"
+    },
+    {
+      "id": "TR049",
+      "name": "Transport Hub 49"
+    },
+    {
+      "id": "TR050",
+      "name": "Transport Hub 50"
+    }
+  ],
+  "lifestyle_zones": [
+    {
+      "id": "LZ001",
+      "name": "Lifestyle Zone 1"
+    },
+    {
+      "id": "LZ002",
+      "name": "Lifestyle Zone 2"
+    },
+    {
+      "id": "LZ003",
+      "name": "Lifestyle Zone 3"
+    },
+    {
+      "id": "LZ004",
+      "name": "Lifestyle Zone 4"
+    },
+    {
+      "id": "LZ005",
+      "name": "Lifestyle Zone 5"
+    },
+    {
+      "id": "LZ006",
+      "name": "Lifestyle Zone 6"
+    },
+    {
+      "id": "LZ007",
+      "name": "Lifestyle Zone 7"
+    },
+    {
+      "id": "LZ008",
+      "name": "Lifestyle Zone 8"
+    },
+    {
+      "id": "LZ009",
+      "name": "Lifestyle Zone 9"
+    },
+    {
+      "id": "LZ010",
+      "name": "Lifestyle Zone 10"
+    },
+    {
+      "id": "LZ011",
+      "name": "Lifestyle Zone 11"
+    },
+    {
+      "id": "LZ012",
+      "name": "Lifestyle Zone 12"
+    },
+    {
+      "id": "LZ013",
+      "name": "Lifestyle Zone 13"
+    },
+    {
+      "id": "LZ014",
+      "name": "Lifestyle Zone 14"
+    },
+    {
+      "id": "LZ015",
+      "name": "Lifestyle Zone 15"
+    },
+    {
+      "id": "LZ016",
+      "name": "Lifestyle Zone 16"
+    },
+    {
+      "id": "LZ017",
+      "name": "Lifestyle Zone 17"
+    },
+    {
+      "id": "LZ018",
+      "name": "Lifestyle Zone 18"
+    },
+    {
+      "id": "LZ019",
+      "name": "Lifestyle Zone 19"
+    },
+    {
+      "id": "LZ020",
+      "name": "Lifestyle Zone 20"
+    },
+    {
+      "id": "LZ021",
+      "name": "Lifestyle Zone 21"
+    },
+    {
+      "id": "LZ022",
+      "name": "Lifestyle Zone 22"
+    },
+    {
+      "id": "LZ023",
+      "name": "Lifestyle Zone 23"
+    },
+    {
+      "id": "LZ024",
+      "name": "Lifestyle Zone 24"
+    },
+    {
+      "id": "LZ025",
+      "name": "Lifestyle Zone 25"
+    },
+    {
+      "id": "LZ026",
+      "name": "Lifestyle Zone 26"
+    },
+    {
+      "id": "LZ027",
+      "name": "Lifestyle Zone 27"
+    },
+    {
+      "id": "LZ028",
+      "name": "Lifestyle Zone 28"
+    },
+    {
+      "id": "LZ029",
+      "name": "Lifestyle Zone 29"
+    },
+    {
+      "id": "LZ030",
+      "name": "Lifestyle Zone 30"
+    },
+    {
+      "id": "LZ031",
+      "name": "Lifestyle Zone 31"
+    },
+    {
+      "id": "LZ032",
+      "name": "Lifestyle Zone 32"
+    },
+    {
+      "id": "LZ033",
+      "name": "Lifestyle Zone 33"
+    },
+    {
+      "id": "LZ034",
+      "name": "Lifestyle Zone 34"
+    },
+    {
+      "id": "LZ035",
+      "name": "Lifestyle Zone 35"
+    },
+    {
+      "id": "LZ036",
+      "name": "Lifestyle Zone 36"
+    },
+    {
+      "id": "LZ037",
+      "name": "Lifestyle Zone 37"
+    },
+    {
+      "id": "LZ038",
+      "name": "Lifestyle Zone 38"
+    },
+    {
+      "id": "LZ039",
+      "name": "Lifestyle Zone 39"
+    },
+    {
+      "id": "LZ040",
+      "name": "Lifestyle Zone 40"
+    }
+  ],
+  "smart_features": [
+    {
+      "id": "SF001",
+      "name": "Smart Feature 1"
+    },
+    {
+      "id": "SF002",
+      "name": "Smart Feature 2"
+    },
+    {
+      "id": "SF003",
+      "name": "Smart Feature 3"
+    },
+    {
+      "id": "SF004",
+      "name": "Smart Feature 4"
+    },
+    {
+      "id": "SF005",
+      "name": "Smart Feature 5"
+    },
+    {
+      "id": "SF006",
+      "name": "Smart Feature 6"
+    },
+    {
+      "id": "SF007",
+      "name": "Smart Feature 7"
+    },
+    {
+      "id": "SF008",
+      "name": "Smart Feature 8"
+    },
+    {
+      "id": "SF009",
+      "name": "Smart Feature 9"
+    },
+    {
+      "id": "SF010",
+      "name": "Smart Feature 10"
+    },
+    {
+      "id": "SF011",
+      "name": "Smart Feature 11"
+    },
+    {
+      "id": "SF012",
+      "name": "Smart Feature 12"
+    },
+    {
+      "id": "SF013",
+      "name": "Smart Feature 13"
+    },
+    {
+      "id": "SF014",
+      "name": "Smart Feature 14"
+    },
+    {
+      "id": "SF015",
+      "name": "Smart Feature 15"
+    },
+    {
+      "id": "SF016",
+      "name": "Smart Feature 16"
+    },
+    {
+      "id": "SF017",
+      "name": "Smart Feature 17"
+    },
+    {
+      "id": "SF018",
+      "name": "Smart Feature 18"
+    },
+    {
+      "id": "SF019",
+      "name": "Smart Feature 19"
+    },
+    {
+      "id": "SF020",
+      "name": "Smart Feature 20"
+    },
+    {
+      "id": "SF021",
+      "name": "Smart Feature 21"
+    },
+    {
+      "id": "SF022",
+      "name": "Smart Feature 22"
+    },
+    {
+      "id": "SF023",
+      "name": "Smart Feature 23"
+    },
+    {
+      "id": "SF024",
+      "name": "Smart Feature 24"
+    },
+    {
+      "id": "SF025",
+      "name": "Smart Feature 25"
+    },
+    {
+      "id": "SF026",
+      "name": "Smart Feature 26"
+    },
+    {
+      "id": "SF027",
+      "name": "Smart Feature 27"
+    },
+    {
+      "id": "SF028",
+      "name": "Smart Feature 28"
+    },
+    {
+      "id": "SF029",
+      "name": "Smart Feature 29"
+    },
+    {
+      "id": "SF030",
+      "name": "Smart Feature 30"
+    },
+    {
+      "id": "SF031",
+      "name": "Smart Feature 31"
+    },
+    {
+      "id": "SF032",
+      "name": "Smart Feature 32"
+    },
+    {
+      "id": "SF033",
+      "name": "Smart Feature 33"
+    },
+    {
+      "id": "SF034",
+      "name": "Smart Feature 34"
+    },
+    {
+      "id": "SF035",
+      "name": "Smart Feature 35"
+    },
+    {
+      "id": "SF036",
+      "name": "Smart Feature 36"
+    },
+    {
+      "id": "SF037",
+      "name": "Smart Feature 37"
+    },
+    {
+      "id": "SF038",
+      "name": "Smart Feature 38"
+    },
+    {
+      "id": "SF039",
+      "name": "Smart Feature 39"
+    },
+    {
+      "id": "SF040",
+      "name": "Smart Feature 40"
+    }
+  ],
+  "investment_insights": [
+    {
+      "id": "INV001",
+      "growth": "4%"
+    },
+    {
+      "id": "INV002",
+      "growth": "5%"
+    },
+    {
+      "id": "INV003",
+      "growth": "6%"
+    },
+    {
+      "id": "INV004",
+      "growth": "7%"
+    },
+    {
+      "id": "INV005",
+      "growth": "8%"
+    },
+    {
+      "id": "INV006",
+      "growth": "9%"
+    },
+    {
+      "id": "INV007",
+      "growth": "3%"
+    },
+    {
+      "id": "INV008",
+      "growth": "4%"
+    },
+    {
+      "id": "INV009",
+      "growth": "5%"
+    },
+    {
+      "id": "INV010",
+      "growth": "6%"
+    },
+    {
+      "id": "INV011",
+      "growth": "7%"
+    },
+    {
+      "id": "INV012",
+      "growth": "8%"
+    },
+    {
+      "id": "INV013",
+      "growth": "9%"
+    },
+    {
+      "id": "INV014",
+      "growth": "3%"
+    },
+    {
+      "id": "INV015",
+      "growth": "4%"
+    },
+    {
+      "id": "INV016",
+      "growth": "5%"
+    },
+    {
+      "id": "INV017",
+      "growth": "6%"
+    },
+    {
+      "id": "INV018",
+      "growth": "7%"
+    },
+    {
+      "id": "INV019",
+      "growth": "8%"
+    },
+    {
+      "id": "INV020",
+      "growth": "9%"
+    },
+    {
+      "id": "INV021",
+      "growth": "3%"
+    },
+    {
+      "id": "INV022",
+      "growth": "4%"
+    },
+    {
+      "id": "INV023",
+      "growth": "5%"
+    },
+    {
+      "id": "INV024",
+      "growth": "6%"
+    },
+    {
+      "id": "INV025",
+      "growth": "7%"
+    },
+    {
+      "id": "INV026",
+      "growth": "8%"
+    },
+    {
+      "id": "INV027",
+      "growth": "9%"
+    },
+    {
+      "id": "INV028",
+      "growth": "3%"
+    },
+    {
+      "id": "INV029",
+      "growth": "4%"
+    },
+    {
+      "id": "INV030",
+      "growth": "5%"
+    },
+    {
+      "id": "INV031",
+      "growth": "6%"
+    },
+    {
+      "id": "INV032",
+      "growth": "7%"
+    },
+    {
+      "id": "INV033",
+      "growth": "8%"
+    },
+    {
+      "id": "INV034",
+      "growth": "9%"
+    },
+    {
+      "id": "INV035",
+      "growth": "3%"
+    },
+    {
+      "id": "INV036",
+      "growth": "4%"
+    },
+    {
+      "id": "INV037",
+      "growth": "5%"
+    },
+    {
+      "id": "INV038",
+      "growth": "6%"
+    },
+    {
+      "id": "INV039",
+      "growth": "7%"
+    },
+    {
+      "id": "INV040",
+      "growth": "8%"
+    },
+    {
+      "id": "INV041",
+      "growth": "9%"
+    },
+    {
+      "id": "INV042",
+      "growth": "3%"
+    },
+    {
+      "id": "INV043",
+      "growth": "4%"
+    },
+    {
+      "id": "INV044",
+      "growth": "5%"
+    },
+    {
+      "id": "INV045",
+      "growth": "6%"
+    },
+    {
+      "id": "INV046",
+      "growth": "7%"
+    },
+    {
+      "id": "INV047",
+      "growth": "8%"
+    },
+    {
+      "id": "INV048",
+      "growth": "9%"
+    },
+    {
+      "id": "INV049",
+      "growth": "3%"
+    },
+    {
+      "id": "INV050",
+      "growth": "4%"
+    }
+  ],
+  "financing_programs": [
+    {
+      "id": "FIN001",
+      "tenure_years": 21
+    },
+    {
+      "id": "FIN002",
+      "tenure_years": 22
+    },
+    {
+      "id": "FIN003",
+      "tenure_years": 23
+    },
+    {
+      "id": "FIN004",
+      "tenure_years": 24
+    },
+    {
+      "id": "FIN005",
+      "tenure_years": 25
+    },
+    {
+      "id": "FIN006",
+      "tenure_years": 26
+    },
+    {
+      "id": "FIN007",
+      "tenure_years": 27
+    },
+    {
+      "id": "FIN008",
+      "tenure_years": 28
+    },
+    {
+      "id": "FIN009",
+      "tenure_years": 29
+    },
+    {
+      "id": "FIN010",
+      "tenure_years": 30
+    },
+    {
+      "id": "FIN011",
+      "tenure_years": 31
+    },
+    {
+      "id": "FIN012",
+      "tenure_years": 32
+    },
+    {
+      "id": "FIN013",
+      "tenure_years": 33
+    },
+    {
+      "id": "FIN014",
+      "tenure_years": 34
+    },
+    {
+      "id": "FIN015",
+      "tenure_years": 35
+    },
+    {
+      "id": "FIN016",
+      "tenure_years": 20
+    },
+    {
+      "id": "FIN017",
+      "tenure_years": 21
+    },
+    {
+      "id": "FIN018",
+      "tenure_years": 22
+    },
+    {
+      "id": "FIN019",
+      "tenure_years": 23
+    },
+    {
+      "id": "FIN020",
+      "tenure_years": 24
+    },
+    {
+      "id": "FIN021",
+      "tenure_years": 25
+    },
+    {
+      "id": "FIN022",
+      "tenure_years": 26
+    },
+    {
+      "id": "FIN023",
+      "tenure_years": 27
+    },
+    {
+      "id": "FIN024",
+      "tenure_years": 28
+    },
+    {
+      "id": "FIN025",
+      "tenure_years": 29
+    }
+  ],
+  "viewing_events": [
+    {
+      "id": "VE001",
+      "slots": 21
+    },
+    {
+      "id": "VE002",
+      "slots": 22
+    },
+    {
+      "id": "VE003",
+      "slots": 23
+    },
+    {
+      "id": "VE004",
+      "slots": 24
+    },
+    {
+      "id": "VE005",
+      "slots": 25
+    },
+    {
+      "id": "VE006",
+      "slots": 26
+    },
+    {
+      "id": "VE007",
+      "slots": 27
+    },
+    {
+      "id": "VE008",
+      "slots": 28
+    },
+    {
+      "id": "VE009",
+      "slots": 29
+    },
+    {
+      "id": "VE010",
+      "slots": 30
+    },
+    {
+      "id": "VE011",
+      "slots": 31
+    },
+    {
+      "id": "VE012",
+      "slots": 32
+    },
+    {
+      "id": "VE013",
+      "slots": 33
+    },
+    {
+      "id": "VE014",
+      "slots": 34
+    },
+    {
+      "id": "VE015",
+      "slots": 35
+    },
+    {
+      "id": "VE016",
+      "slots": 36
+    },
+    {
+      "id": "VE017",
+      "slots": 37
+    },
+    {
+      "id": "VE018",
+      "slots": 38
+    },
+    {
+      "id": "VE019",
+      "slots": 39
+    },
+    {
+      "id": "VE020",
+      "slots": 40
+    },
+    {
+      "id": "VE021",
+      "slots": 41
+    },
+    {
+      "id": "VE022",
+      "slots": 42
+    },
+    {
+      "id": "VE023",
+      "slots": 43
+    },
+    {
+      "id": "VE024",
+      "slots": 44
+    },
+    {
+      "id": "VE025",
+      "slots": 45
+    },
+    {
+      "id": "VE026",
+      "slots": 46
+    },
+    {
+      "id": "VE027",
+      "slots": 47
+    },
+    {
+      "id": "VE028",
+      "slots": 48
+    },
+    {
+      "id": "VE029",
+      "slots": 49
+    },
+    {
+      "id": "VE030",
+      "slots": 20
+    },
+    {
+      "id": "VE031",
+      "slots": 21
+    },
+    {
+      "id": "VE032",
+      "slots": 22
+    },
+    {
+      "id": "VE033",
+      "slots": 23
+    },
+    {
+      "id": "VE034",
+      "slots": 24
+    },
+    {
+      "id": "VE035",
+      "slots": 25
+    },
+    {
+      "id": "VE036",
+      "slots": 26
+    },
+    {
+      "id": "VE037",
+      "slots": 27
+    },
+    {
+      "id": "VE038",
+      "slots": 28
+    },
+    {
+      "id": "VE039",
+      "slots": 29
+    },
+    {
+      "id": "VE040",
+      "slots": 30
+    },
+    {
+      "id": "VE041",
+      "slots": 31
+    },
+    {
+      "id": "VE042",
+      "slots": 32
+    },
+    {
+      "id": "VE043",
+      "slots": 33
+    },
+    {
+      "id": "VE044",
+      "slots": 34
+    },
+    {
+      "id": "VE045",
+      "slots": 35
+    },
+    {
+      "id": "VE046",
+      "slots": 36
+    },
+    {
+      "id": "VE047",
+      "slots": 37
+    },
+    {
+      "id": "VE048",
+      "slots": 38
+    },
+    {
+      "id": "VE049",
+      "slots": 39
+    },
+    {
+      "id": "VE050",
+      "slots": 40
+    },
+    {
+      "id": "VE051",
+      "slots": 41
+    },
+    {
+      "id": "VE052",
+      "slots": 42
+    },
+    {
+      "id": "VE053",
+      "slots": 43
+    },
+    {
+      "id": "VE054",
+      "slots": 44
+    },
+    {
+      "id": "VE055",
+      "slots": 45
+    },
+    {
+      "id": "VE056",
+      "slots": 46
+    },
+    {
+      "id": "VE057",
+      "slots": 47
+    },
+    {
+      "id": "VE058",
+      "slots": 48
+    },
+    {
+      "id": "VE059",
+      "slots": 49
+    },
+    {
+      "id": "VE060",
+      "slots": 20
+    },
+    {
+      "id": "VE061",
+      "slots": 21
+    },
+    {
+      "id": "VE062",
+      "slots": 22
+    },
+    {
+      "id": "VE063",
+      "slots": 23
+    },
+    {
+      "id": "VE064",
+      "slots": 24
+    },
+    {
+      "id": "VE065",
+      "slots": 25
+    },
+    {
+      "id": "VE066",
+      "slots": 26
+    },
+    {
+      "id": "VE067",
+      "slots": 27
+    },
+    {
+      "id": "VE068",
+      "slots": 28
+    },
+    {
+      "id": "VE069",
+      "slots": 29
+    },
+    {
+      "id": "VE070",
+      "slots": 30
+    },
+    {
+      "id": "VE071",
+      "slots": 31
+    },
+    {
+      "id": "VE072",
+      "slots": 32
+    },
+    {
+      "id": "VE073",
+      "slots": 33
+    },
+    {
+      "id": "VE074",
+      "slots": 34
+    },
+    {
+      "id": "VE075",
+      "slots": 35
+    },
+    {
+      "id": "VE076",
+      "slots": 36
+    },
+    {
+      "id": "VE077",
+      "slots": 37
+    },
+    {
+      "id": "VE078",
+      "slots": 38
+    },
+    {
+      "id": "VE079",
+      "slots": 39
+    },
+    {
+      "id": "VE080",
+      "slots": 40
+    },
+    {
+      "id": "VE081",
+      "slots": 41
+    },
+    {
+      "id": "VE082",
+      "slots": 42
+    },
+    {
+      "id": "VE083",
+      "slots": 43
+    },
+    {
+      "id": "VE084",
+      "slots": 44
+    },
+    {
+      "id": "VE085",
+      "slots": 45
+    },
+    {
+      "id": "VE086",
+      "slots": 46
+    },
+    {
+      "id": "VE087",
+      "slots": 47
+    },
+    {
+      "id": "VE088",
+      "slots": 48
+    },
+    {
+      "id": "VE089",
+      "slots": 49
+    },
+    {
+      "id": "VE090",
+      "slots": 20
+    },
+    {
+      "id": "VE091",
+      "slots": 21
+    },
+    {
+      "id": "VE092",
+      "slots": 22
+    },
+    {
+      "id": "VE093",
+      "slots": 23
+    },
+    {
+      "id": "VE094",
+      "slots": 24
+    },
+    {
+      "id": "VE095",
+      "slots": 25
+    },
+    {
+      "id": "VE096",
+      "slots": 26
+    },
+    {
+      "id": "VE097",
+      "slots": 27
+    },
+    {
+      "id": "VE098",
+      "slots": 28
+    },
+    {
+      "id": "VE099",
+      "slots": 29
+    },
+    {
+      "id": "VE100",
+      "slots": 30
+    },
+    {
+      "id": "VE101",
+      "slots": 31
+    },
+    {
+      "id": "VE102",
+      "slots": 32
+    },
+    {
+      "id": "VE103",
+      "slots": 33
+    },
+    {
+      "id": "VE104",
+      "slots": 34
+    },
+    {
+      "id": "VE105",
+      "slots": 35
+    },
+    {
+      "id": "VE106",
+      "slots": 36
+    },
+    {
+      "id": "VE107",
+      "slots": 37
+    },
+    {
+      "id": "VE108",
+      "slots": 38
+    },
+    {
+      "id": "VE109",
+      "slots": 39
+    },
+    {
+      "id": "VE110",
+      "slots": 40
+    },
+    {
+      "id": "VE111",
+      "slots": 41
+    },
+    {
+      "id": "VE112",
+      "slots": 42
+    },
+    {
+      "id": "VE113",
+      "slots": 43
+    },
+    {
+      "id": "VE114",
+      "slots": 44
+    },
+    {
+      "id": "VE115",
+      "slots": 45
+    },
+    {
+      "id": "VE116",
+      "slots": 46
+    },
+    {
+      "id": "VE117",
+      "slots": 47
+    },
+    {
+      "id": "VE118",
+      "slots": 48
+    },
+    {
+      "id": "VE119",
+      "slots": 49
+    },
+    {
+      "id": "VE120",
+      "slots": 20
+    },
+    {
+      "id": "VE121",
+      "slots": 21
+    },
+    {
+      "id": "VE122",
+      "slots": 22
+    },
+    {
+      "id": "VE123",
+      "slots": 23
+    },
+    {
+      "id": "VE124",
+      "slots": 24
+    },
+    {
+      "id": "VE125",
+      "slots": 25
+    },
+    {
+      "id": "VE126",
+      "slots": 26
+    },
+    {
+      "id": "VE127",
+      "slots": 27
+    },
+    {
+      "id": "VE128",
+      "slots": 28
+    },
+    {
+      "id": "VE129",
+      "slots": 29
+    },
+    {
+      "id": "VE130",
+      "slots": 30
+    },
+    {
+      "id": "VE131",
+      "slots": 31
+    },
+    {
+      "id": "VE132",
+      "slots": 32
+    },
+    {
+      "id": "VE133",
+      "slots": 33
+    },
+    {
+      "id": "VE134",
+      "slots": 34
+    },
+    {
+      "id": "VE135",
+      "slots": 35
+    },
+    {
+      "id": "VE136",
+      "slots": 36
+    },
+    {
+      "id": "VE137",
+      "slots": 37
+    },
+    {
+      "id": "VE138",
+      "slots": 38
+    },
+    {
+      "id": "VE139",
+      "slots": 39
+    },
+    {
+      "id": "VE140",
+      "slots": 40
+    },
+    {
+      "id": "VE141",
+      "slots": 41
+    },
+    {
+      "id": "VE142",
+      "slots": 42
+    },
+    {
+      "id": "VE143",
+      "slots": 43
+    },
+    {
+      "id": "VE144",
+      "slots": 44
+    },
+    {
+      "id": "VE145",
+      "slots": 45
+    },
+    {
+      "id": "VE146",
+      "slots": 46
+    },
+    {
+      "id": "VE147",
+      "slots": 47
+    },
+    {
+      "id": "VE148",
+      "slots": 48
+    },
+    {
+      "id": "VE149",
+      "slots": 49
+    },
+    {
+      "id": "VE150",
+      "slots": 20
+    }
+  ],
+  "project_comparisons": [
+    {
+      "id": "CMP001",
+      "project_a": "COM002",
+      "project_b": "COM003"
+    },
+    {
+      "id": "CMP002",
+      "project_a": "COM003",
+      "project_b": "COM004"
+    },
+    {
+      "id": "CMP003",
+      "project_a": "COM004",
+      "project_b": "COM005"
+    },
+    {
+      "id": "CMP004",
+      "project_a": "COM005",
+      "project_b": "COM006"
+    },
+    {
+      "id": "CMP005",
+      "project_a": "COM006",
+      "project_b": "COM007"
+    },
+    {
+      "id": "CMP006",
+      "project_a": "COM007",
+      "project_b": "COM008"
+    },
+    {
+      "id": "CMP007",
+      "project_a": "COM008",
+      "project_b": "COM009"
+    },
+    {
+      "id": "CMP008",
+      "project_a": "COM009",
+      "project_b": "COM010"
+    },
+    {
+      "id": "CMP009",
+      "project_a": "COM010",
+      "project_b": "COM011"
+    },
+    {
+      "id": "CMP010",
+      "project_a": "COM011",
+      "project_b": "COM012"
+    },
+    {
+      "id": "CMP011",
+      "project_a": "COM012",
+      "project_b": "COM013"
+    },
+    {
+      "id": "CMP012",
+      "project_a": "COM013",
+      "project_b": "COM014"
+    },
+    {
+      "id": "CMP013",
+      "project_a": "COM014",
+      "project_b": "COM015"
+    },
+    {
+      "id": "CMP014",
+      "project_a": "COM015",
+      "project_b": "COM016"
+    },
+    {
+      "id": "CMP015",
+      "project_a": "COM016",
+      "project_b": "COM017"
+    },
+    {
+      "id": "CMP016",
+      "project_a": "COM017",
+      "project_b": "COM018"
+    },
+    {
+      "id": "CMP017",
+      "project_a": "COM018",
+      "project_b": "COM019"
+    },
+    {
+      "id": "CMP018",
+      "project_a": "COM019",
+      "project_b": "COM020"
+    },
+    {
+      "id": "CMP019",
+      "project_a": "COM020",
+      "project_b": "COM001"
+    },
+    {
+      "id": "CMP020",
+      "project_a": "COM001",
+      "project_b": "COM002"
+    },
+    {
+      "id": "CMP021",
+      "project_a": "COM002",
+      "project_b": "COM003"
+    },
+    {
+      "id": "CMP022",
+      "project_a": "COM003",
+      "project_b": "COM004"
+    },
+    {
+      "id": "CMP023",
+      "project_a": "COM004",
+      "project_b": "COM005"
+    },
+    {
+      "id": "CMP024",
+      "project_a": "COM005",
+      "project_b": "COM006"
+    },
+    {
+      "id": "CMP025",
+      "project_a": "COM006",
+      "project_b": "COM007"
+    },
+    {
+      "id": "CMP026",
+      "project_a": "COM007",
+      "project_b": "COM008"
+    },
+    {
+      "id": "CMP027",
+      "project_a": "COM008",
+      "project_b": "COM009"
+    },
+    {
+      "id": "CMP028",
+      "project_a": "COM009",
+      "project_b": "COM010"
+    },
+    {
+      "id": "CMP029",
+      "project_a": "COM010",
+      "project_b": "COM011"
+    },
+    {
+      "id": "CMP030",
+      "project_a": "COM011",
+      "project_b": "COM012"
+    },
+    {
+      "id": "CMP031",
+      "project_a": "COM012",
+      "project_b": "COM013"
+    },
+    {
+      "id": "CMP032",
+      "project_a": "COM013",
+      "project_b": "COM014"
+    },
+    {
+      "id": "CMP033",
+      "project_a": "COM014",
+      "project_b": "COM015"
+    },
+    {
+      "id": "CMP034",
+      "project_a": "COM015",
+      "project_b": "COM016"
+    },
+    {
+      "id": "CMP035",
+      "project_a": "COM016",
+      "project_b": "COM017"
+    },
+    {
+      "id": "CMP036",
+      "project_a": "COM017",
+      "project_b": "COM018"
+    },
+    {
+      "id": "CMP037",
+      "project_a": "COM018",
+      "project_b": "COM019"
+    },
+    {
+      "id": "CMP038",
+      "project_a": "COM019",
+      "project_b": "COM020"
+    },
+    {
+      "id": "CMP039",
+      "project_a": "COM020",
+      "project_b": "COM001"
+    },
+    {
+      "id": "CMP040",
+      "project_a": "COM001",
+      "project_b": "COM002"
+    },
+    {
+      "id": "CMP041",
+      "project_a": "COM002",
+      "project_b": "COM003"
+    },
+    {
+      "id": "CMP042",
+      "project_a": "COM003",
+      "project_b": "COM004"
+    },
+    {
+      "id": "CMP043",
+      "project_a": "COM004",
+      "project_b": "COM005"
+    },
+    {
+      "id": "CMP044",
+      "project_a": "COM005",
+      "project_b": "COM006"
+    },
+    {
+      "id": "CMP045",
+      "project_a": "COM006",
+      "project_b": "COM007"
+    },
+    {
+      "id": "CMP046",
+      "project_a": "COM007",
+      "project_b": "COM008"
+    },
+    {
+      "id": "CMP047",
+      "project_a": "COM008",
+      "project_b": "COM009"
+    },
+    {
+      "id": "CMP048",
+      "project_a": "COM009",
+      "project_b": "COM010"
+    },
+    {
+      "id": "CMP049",
+      "project_a": "COM010",
+      "project_b": "COM011"
+    },
+    {
+      "id": "CMP050",
+      "project_a": "COM011",
+      "project_b": "COM012"
+    }
+  ],
+  "customer_stories": [
+    {
+      "id": "CS001",
+      "customer": "Customer 1",
+      "rating": 5
+    },
+    {
+      "id": "CS002",
+      "customer": "Customer 2",
+      "rating": 5
+    },
+    {
+      "id": "CS003",
+      "customer": "Customer 3",
+      "rating": 5
+    },
+    {
+      "id": "CS004",
+      "customer": "Customer 4",
+      "rating": 5
+    },
+    {
+      "id": "CS005",
+      "customer": "Customer 5",
+      "rating": 5
+    },
+    {
+      "id": "CS006",
+      "customer": "Customer 6",
+      "rating": 5
+    },
+    {
+      "id": "CS007",
+      "customer": "Customer 7",
+      "rating": 5
+    },
+    {
+      "id": "CS008",
+      "customer": "Customer 8",
+      "rating": 5
+    },
+    {
+      "id": "CS009",
+      "customer": "Customer 9",
+      "rating": 5
+    },
+    {
+      "id": "CS010",
+      "customer": "Customer 10",
+      "rating": 5
+    },
+    {
+      "id": "CS011",
+      "customer": "Customer 11",
+      "rating": 5
+    },
+    {
+      "id": "CS012",
+      "customer": "Customer 12",
+      "rating": 5
+    },
+    {
+      "id": "CS013",
+      "customer": "Customer 13",
+      "rating": 5
+    },
+    {
+      "id": "CS014",
+      "customer": "Customer 14",
+      "rating": 5
+    },
+    {
+      "id": "CS015",
+      "customer": "Customer 15",
+      "rating": 5
+    },
+    {
+      "id": "CS016",
+      "customer": "Customer 16",
+      "rating": 5
+    },
+    {
+      "id": "CS017",
+      "customer": "Customer 17",
+      "rating": 5
+    },
+    {
+      "id": "CS018",
+      "customer": "Customer 18",
+      "rating": 5
+    },
+    {
+      "id": "CS019",
+      "customer": "Customer 19",
+      "rating": 5
+    },
+    {
+      "id": "CS020",
+      "customer": "Customer 20",
+      "rating": 5
+    },
+    {
+      "id": "CS021",
+      "customer": "Customer 21",
+      "rating": 5
+    },
+    {
+      "id": "CS022",
+      "customer": "Customer 22",
+      "rating": 5
+    },
+    {
+      "id": "CS023",
+      "customer": "Customer 23",
+      "rating": 5
+    },
+    {
+      "id": "CS024",
+      "customer": "Customer 24",
+      "rating": 5
+    },
+    {
+      "id": "CS025",
+      "customer": "Customer 25",
+      "rating": 5
+    },
+    {
+      "id": "CS026",
+      "customer": "Customer 26",
+      "rating": 5
+    },
+    {
+      "id": "CS027",
+      "customer": "Customer 27",
+      "rating": 5
+    },
+    {
+      "id": "CS028",
+      "customer": "Customer 28",
+      "rating": 5
+    },
+    {
+      "id": "CS029",
+      "customer": "Customer 29",
+      "rating": 5
+    },
+    {
+      "id": "CS030",
+      "customer": "Customer 30",
+      "rating": 5
+    },
+    {
+      "id": "CS031",
+      "customer": "Customer 31",
+      "rating": 5
+    },
+    {
+      "id": "CS032",
+      "customer": "Customer 32",
+      "rating": 5
+    },
+    {
+      "id": "CS033",
+      "customer": "Customer 33",
+      "rating": 5
+    },
+    {
+      "id": "CS034",
+      "customer": "Customer 34",
+      "rating": 5
+    },
+    {
+      "id": "CS035",
+      "customer": "Customer 35",
+      "rating": 5
+    },
+    {
+      "id": "CS036",
+      "customer": "Customer 36",
+      "rating": 5
+    },
+    {
+      "id": "CS037",
+      "customer": "Customer 37",
+      "rating": 5
+    },
+    {
+      "id": "CS038",
+      "customer": "Customer 38",
+      "rating": 5
+    },
+    {
+      "id": "CS039",
+      "customer": "Customer 39",
+      "rating": 5
+    },
+    {
+      "id": "CS040",
+      "customer": "Customer 40",
+      "rating": 5
+    },
+    {
+      "id": "CS041",
+      "customer": "Customer 41",
+      "rating": 5
+    },
+    {
+      "id": "CS042",
+      "customer": "Customer 42",
+      "rating": 5
+    },
+    {
+      "id": "CS043",
+      "customer": "Customer 43",
+      "rating": 5
+    },
+    {
+      "id": "CS044",
+      "customer": "Customer 44",
+      "rating": 5
+    },
+    {
+      "id": "CS045",
+      "customer": "Customer 45",
+      "rating": 5
+    },
+    {
+      "id": "CS046",
+      "customer": "Customer 46",
+      "rating": 5
+    },
+    {
+      "id": "CS047",
+      "customer": "Customer 47",
+      "rating": 5
+    },
+    {
+      "id": "CS048",
+      "customer": "Customer 48",
+      "rating": 5
+    },
+    {
+      "id": "CS049",
+      "customer": "Customer 49",
+      "rating": 5
+    },
+    {
+      "id": "CS050",
+      "customer": "Customer 50",
+      "rating": 5
+    },
+    {
+      "id": "CS051",
+      "customer": "Customer 51",
+      "rating": 5
+    },
+    {
+      "id": "CS052",
+      "customer": "Customer 52",
+      "rating": 5
+    },
+    {
+      "id": "CS053",
+      "customer": "Customer 53",
+      "rating": 5
+    },
+    {
+      "id": "CS054",
+      "customer": "Customer 54",
+      "rating": 5
+    },
+    {
+      "id": "CS055",
+      "customer": "Customer 55",
+      "rating": 5
+    },
+    {
+      "id": "CS056",
+      "customer": "Customer 56",
+      "rating": 5
+    },
+    {
+      "id": "CS057",
+      "customer": "Customer 57",
+      "rating": 5
+    },
+    {
+      "id": "CS058",
+      "customer": "Customer 58",
+      "rating": 5
+    },
+    {
+      "id": "CS059",
+      "customer": "Customer 59",
+      "rating": 5
+    },
+    {
+      "id": "CS060",
+      "customer": "Customer 60",
+      "rating": 5
+    },
+    {
+      "id": "CS061",
+      "customer": "Customer 61",
+      "rating": 5
+    },
+    {
+      "id": "CS062",
+      "customer": "Customer 62",
+      "rating": 5
+    },
+    {
+      "id": "CS063",
+      "customer": "Customer 63",
+      "rating": 5
+    },
+    {
+      "id": "CS064",
+      "customer": "Customer 64",
+      "rating": 5
+    },
+    {
+      "id": "CS065",
+      "customer": "Customer 65",
+      "rating": 5
+    },
+    {
+      "id": "CS066",
+      "customer": "Customer 66",
+      "rating": 5
+    },
+    {
+      "id": "CS067",
+      "customer": "Customer 67",
+      "rating": 5
+    },
+    {
+      "id": "CS068",
+      "customer": "Customer 68",
+      "rating": 5
+    },
+    {
+      "id": "CS069",
+      "customer": "Customer 69",
+      "rating": 5
+    },
+    {
+      "id": "CS070",
+      "customer": "Customer 70",
+      "rating": 5
+    },
+    {
+      "id": "CS071",
+      "customer": "Customer 71",
+      "rating": 5
+    },
+    {
+      "id": "CS072",
+      "customer": "Customer 72",
+      "rating": 5
+    },
+    {
+      "id": "CS073",
+      "customer": "Customer 73",
+      "rating": 5
+    },
+    {
+      "id": "CS074",
+      "customer": "Customer 74",
+      "rating": 5
+    },
+    {
+      "id": "CS075",
+      "customer": "Customer 75",
+      "rating": 5
+    },
+    {
+      "id": "CS076",
+      "customer": "Customer 76",
+      "rating": 5
+    },
+    {
+      "id": "CS077",
+      "customer": "Customer 77",
+      "rating": 5
+    },
+    {
+      "id": "CS078",
+      "customer": "Customer 78",
+      "rating": 5
+    },
+    {
+      "id": "CS079",
+      "customer": "Customer 79",
+      "rating": 5
+    },
+    {
+      "id": "CS080",
+      "customer": "Customer 80",
+      "rating": 5
+    },
+    {
+      "id": "CS081",
+      "customer": "Customer 81",
+      "rating": 5
+    },
+    {
+      "id": "CS082",
+      "customer": "Customer 82",
+      "rating": 5
+    },
+    {
+      "id": "CS083",
+      "customer": "Customer 83",
+      "rating": 5
+    },
+    {
+      "id": "CS084",
+      "customer": "Customer 84",
+      "rating": 5
+    },
+    {
+      "id": "CS085",
+      "customer": "Customer 85",
+      "rating": 5
+    },
+    {
+      "id": "CS086",
+      "customer": "Customer 86",
+      "rating": 5
+    },
+    {
+      "id": "CS087",
+      "customer": "Customer 87",
+      "rating": 5
+    },
+    {
+      "id": "CS088",
+      "customer": "Customer 88",
+      "rating": 5
+    },
+    {
+      "id": "CS089",
+      "customer": "Customer 89",
+      "rating": 5
+    },
+    {
+      "id": "CS090",
+      "customer": "Customer 90",
+      "rating": 5
+    },
+    {
+      "id": "CS091",
+      "customer": "Customer 91",
+      "rating": 5
+    },
+    {
+      "id": "CS092",
+      "customer": "Customer 92",
+      "rating": 5
+    },
+    {
+      "id": "CS093",
+      "customer": "Customer 93",
+      "rating": 5
+    },
+    {
+      "id": "CS094",
+      "customer": "Customer 94",
+      "rating": 5
+    },
+    {
+      "id": "CS095",
+      "customer": "Customer 95",
+      "rating": 5
+    },
+    {
+      "id": "CS096",
+      "customer": "Customer 96",
+      "rating": 5
+    },
+    {
+      "id": "CS097",
+      "customer": "Customer 97",
+      "rating": 5
+    },
+    {
+      "id": "CS098",
+      "customer": "Customer 98",
+      "rating": 5
+    },
+    {
+      "id": "CS099",
+      "customer": "Customer 99",
+      "rating": 5
+    },
+    {
+      "id": "CS100",
+      "customer": "Customer 100",
+      "rating": 5
+    }
+  ]
+}
