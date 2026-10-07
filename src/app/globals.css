@@ -64,3 +64,21 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* Hide floating button from right corner and theme Dagsis chat container */
+#dagsis-chat-button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#dagsis-chat-container {
+  border: 1px solid rgba(196, 106, 58, 0.4) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45) !important;
+  background-color: #18181B !important;
+  overflow: hidden !important;
+  z-index: 999999 !important;
+}
+
