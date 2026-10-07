@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import CustomCursor from "@/components/ui/CustomCursor";
+import Chatbot from "@/components/chatbot/Chatbot";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
           <CustomCursor />
           {children}
         </SmoothScroll>
+        <Chatbot />
       </body>
     </html>
   );
