@@ -1,4 +1,4 @@
-// Horizon Living Core Types
+// Dagsis Property 4 Dummy Core Types
 
 export type AvailabilityStatus = "Launching Soon" | "Limited Units" | "Now Selling" | "Sold Out" | string;
 

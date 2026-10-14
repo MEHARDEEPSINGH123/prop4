@@ -5,7 +5,7 @@ import BookTourExperience from "@/components/booking/BookTourExperience";
 import FloatingGlassDock from "@/components/dock/FloatingGlassDock";
 
 export const metadata: Metadata = {
-  title: "Book Private Viewing | Horizon Living Singapore",
+  title: "Book Private Viewing | Dagsis Property 4 Dummy Singapore",
   description:
     "Exclusive residency viewing accreditation. Reserve private access to architectural pavilions, sky decks, and private wine tastings across 20 master enclaves.",
 };
@@ -24,7 +24,7 @@ export default function BookingPage() {
             <div className="p-1.5 rounded-full bg-stone-100 group-hover:bg-stone-200 transition-colors">
               <ArrowLeft className="w-3.5 h-3.5" />
             </div>
-            <span className="font-medium">Return to Horizon Masterplan</span>
+            <span className="font-medium">Return to Masterplan</span>
           </Link>
 
           <div className="flex items-center gap-3">
@@ -59,7 +59,7 @@ export default function BookingPage() {
           </Link>
         </div>
         <p className="text-[11px] text-muted">
-          © 2026 Horizon Living Singapore • Confidential Private Wealth Facility
+          © 2026 Dagsis Property 4 Dummy Singapore • Confidential Private Wealth Facility
         </p>
       </footer>
 

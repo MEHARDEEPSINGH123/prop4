@@ -44,7 +44,7 @@ export default function CustomerStories() {
               Customer Stories
             </h2>
             <p className="font-editorial italic text-xl text-stone-300 mt-1">
-              Editorial reflections from 100 residents inhabiting the Horizon living ecosystem
+              Editorial reflections from 100 residents inhabiting the Dagsis Property 4 Dummy ecosystem
             </p>
           </div>
 

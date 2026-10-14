@@ -1,28 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Compass, Globe, Sparkles } from "lucide-react";
+import { ArrowDown, Compass, Globe } from "lucide-react";
 
 export default function IntroExperience() {
-  const handleOpenAiAgent = () => {
-    if (typeof window !== "undefined") {
-      const win = window as any;
-      if (win.DagsisChat?.open && typeof win.DagsisChat.open === "function") {
-        try {
-          win.DagsisChat.open();
-        } catch {
-          // ignore error if uninitialized
-        }
-      } else if (win.DagsisChat?.toggle && typeof win.DagsisChat.toggle === "function") {
-        try {
-          win.DagsisChat.toggle();
-        } catch {
-          // ignore error if uninitialized
-        }
-      }
-      window.dispatchEvent(new CustomEvent("open-dagsis-chat"));
-    }
-  };
 
   const handleEnter = () => {
     const target = document.getElementById("communities");
@@ -65,29 +46,15 @@ export default function IntroExperience() {
       <div className="relative z-10 w-full px-6 sm:px-12 pt-8 sm:pt-10 flex items-center justify-between text-xs sm:text-sm tracking-widest text-stone-300/80 font-mono">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-          <span className="font-semibold text-stone-200 tracking-wider">HORIZON LIVING • SINGAPORE</span>
+          <span className="font-semibold text-stone-200 tracking-wider">DAGSIS PROPERTY 4 DUMMY • SINGAPORE</span>
           <span className="hidden sm:inline text-stone-400">• LAT 1.290270° N, LONG 103.851959° E</span>
         </div>
 
         <div className="flex items-center gap-4 sm:gap-6">
-          <span className="hidden md:inline-flex items-center gap-1.5 text-stone-300">
+          <span className="inline-flex items-center gap-1.5 text-stone-300">
             <Globe className="w-3.5 h-3.5 text-accent" />
             30 DISTRICT ARCHIPELAGO
           </span>
-          <button
-            onClick={handleOpenAiAgent}
-            data-interactive
-            aria-label="Open Horizon Living AI Agent"
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent/20 hover:bg-accent/30 border border-accent/40 hover:border-accent text-stone-100 backdrop-blur-md transition-all duration-300 shadow-sm hover:shadow-accent/20 group cursor-pointer"
-            title="Open Dagsis AI Agent Concierge"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-            </span>
-            <Sparkles className="w-3.5 h-3.5 text-accent group-hover:rotate-12 transition-transform duration-300" />
-            <span className="text-[11px] font-mono tracking-wider uppercase font-medium">AI Agent</span>
-          </button>
         </div>
       </div>
 
@@ -108,9 +75,9 @@ export default function IntroExperience() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white mb-4 leading-none"
+          className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-4 leading-tight"
         >
-          Horizon Living
+          Dagsis Property 4 Dummy
         </motion.h1>
 
         {/* Future-Ready Communities Subtitle */}

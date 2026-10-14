@@ -267,7 +267,7 @@ export default function BookTourExperience() {
                           type="tel"
                           value={guestPhone}
                           onChange={(e) => setGuestPhone(e.target.value)}
-                          placeholder="+65 9123 4567"
+                          placeholder="+65 XXXXXXXXX"
                           data-interactive
                           className="w-full bg-[#FAF8F5] border border-border rounded-2xl pl-10 pr-4 py-3 text-xs sm:text-sm text-primary focus:outline-none focus:border-accent"
                         />

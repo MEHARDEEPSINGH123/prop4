@@ -655,7 +655,7 @@ const CUSTOMER_ROLES = [
 ];
 
 const CUSTOMER_QUOTES = [
-  "Moving into Horizon Living felt less like purchasing property and more like stepping 20 years into the future. The acoustic tranquility in the middle of the city is unmatched.",
+  "Moving into Dagsis Property 4 Dummy felt less like purchasing property and more like stepping 20 years into the future. The acoustic tranquility in the middle of the city is unmatched.",
   "The circadian spectral lighting and the pure air filtration system transformed my sleep quality from night one. It is rare to see architecture so deeply respectful of human biology.",
   "The private yacht mooring and the cantilevered infinity terrace have hosted the most unforgettable sunsets with our family. We wouldn't trade this for any penthouse worldwide.",
   "As an architect, I scrutinize every joint, reveal, and material interface. The execution here is museum-grade: honest materials, monolithic stone, and sublime proportions.",

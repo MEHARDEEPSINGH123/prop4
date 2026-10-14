@@ -125,10 +125,10 @@ export default function FloatingGlassDock() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 sm:right-8 z-40 max-w-[calc(100vw-2rem)]">
+    <div className="fixed bottom-6 left-6 sm:left-8 z-40 max-w-[calc(100vw-2rem)]">
       <AnimatePresence mode="wait">
         {!isOpen ? (
-          /* Small Circular Trigger with Three Horizontal Lines in Same Corner */
+          /* Small Circular Trigger with Three Horizontal Lines in Same Corner (Left) */
           <motion.button
             key="smallTrigger"
             initial={{ scale: 0.6, opacity: 0 }}
@@ -156,9 +156,9 @@ export default function FloatingGlassDock() {
           <motion.nav
             key="compactDock"
             aria-label="Floating Navigation Dock"
-            initial={{ opacity: 0, scale: 0.8, x: 35, y: 15 }}
+            initial={{ opacity: 0, scale: 0.8, x: -35, y: 15 }}
             animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, x: 35, y: 15 }}
+            exit={{ opacity: 0, scale: 0.8, x: -35, y: 15 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="relative flex items-center gap-0.5 sm:gap-1 px-2 py-1 rounded-full bg-white/95 backdrop-blur-xl border border-stone-200/90 shadow-dock overflow-visible"
           >

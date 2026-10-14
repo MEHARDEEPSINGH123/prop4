@@ -35,7 +35,7 @@ export default function FinalExperience() {
       <div className="relative z-10 w-full px-6 sm:px-12 pt-12 flex items-center justify-between text-xs font-sans tracking-wider text-stone-400">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-accent" />
-          <span>HORIZON LIVING • THE FUTURE OF SHELTER</span>
+          <span>DAGSIS PROPERTY 4 DUMMY • THE FUTURE OF SHELTER</span>
         </div>
         <button
           onClick={scrollToTop}
@@ -132,17 +132,29 @@ export default function FinalExperience() {
             </div>
           </div>
 
+          {/* Contact Details & Headquarters */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-4 border-b border-white/10 text-xs text-stone-300 font-sans">
+            <div className="flex items-center gap-2">
+              <span className="text-accent font-semibold">Address:</span>
+              <span>123, Street ABC, State XYZ, Pin-000000</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-accent font-semibold">Mobile:</span>
+              <span className="font-mono">+65 XXXXXXXXX</span>
+            </div>
+          </div>
+
           {/* Legal, Philosophy & Copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-sans">
             <div className="flex items-center gap-2">
               <span className="font-heading font-bold text-white text-sm tracking-tight">
-                HORIZON LIVING
+                DAGSIS PROPERTY 4 DUMMY
               </span>
               <span>• Architectural Experience Platform</span>
             </div>
 
             <p className="text-center sm:text-right text-[11px] text-stone-500">
-              Zero hardcoded mock data • Dynamically rendered across 14 master collections • © 2026 Horizon Living
+              Zero hardcoded mock data • Dynamically rendered across 14 master collections • © 2026 Dagsis Property 4 Dummy
             </p>
           </div>
         </div>

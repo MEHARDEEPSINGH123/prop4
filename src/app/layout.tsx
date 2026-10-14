@@ -31,11 +31,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Horizon Living — Future-Ready Communities Designed Around Life",
+  title: "Dagsis Property 4 Dummy — Future-Ready Communities Designed Around Life",
   description:
     "An immersive community discovery platform. Explore 20 master-planned enclaves, 120 crafted residences, 100 amenities, and autonomous living across Singapore's 30 districts.",
   keywords: [
-    "Horizon Living",
+    "Dagsis Property 4 Dummy",
     "Luxury Real Estate",
     "Smart Communities",
     "Biophilic Architecture",
