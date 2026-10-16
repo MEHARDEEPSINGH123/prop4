@@ -1,12 +1,13 @@
 """
-Horizon Living - Master Knowledge Base & AI Ingestion Generator
+Dagsis Property 4 Dummy - Master Knowledge Base & AI Ingestion Generator
 Generates:
-  1. horizon_living_knowledge_base.json
-  2. HORIZON_LIVING_AI_KNOWLEDGE_BASE.md
-  3. Horizon_Living_AI_Knowledge_Base.pdf (Executive Editorial Layout)
+  1. dagsis_property_4_dummy_knowledge_base.json (and horizon_living_knowledge_base.json)
+  2. DAGSIS_PROPERTY_4_DUMMY_AI_KNOWLEDGE_BASE.md (and HORIZON_LIVING_AI_KNOWLEDGE_BASE.md)
+  3. Dagsis_Property_4_Dummy_AI_Knowledge_Base.pdf (and Horizon_Living_AI_Knowledge_Base.pdf)
 """
 
 import os
+import shutil
 import json
 from datetime import datetime
 
@@ -34,149 +35,149 @@ with open("src/data/raw-data.json", "r", encoding="utf-8") as f:
 
 COMMUNITY_META = {
     "COM001": {
-        "luxuryName": "The Horizon Solaris Marina",
+        "luxuryName": "The Solaris Marina",
         "tagline": "Regenerative waterfront sanctuaries overlooking the Marina channel",
         "concept": "Cantilevered glass villas floating above a deep-water yacht marina with zero-carbon kinetic façades.",
-        "architect": "Kengo Kuma & Associates",
+        "architect": "Master Biophilic Design Atelier",
         "highlights": ["Private 80ft yacht moorings", "Kinetic solar louvers", "Sub-aquatic wellness spa", "Biophilic sky gardens"]
     },
     "COM002": {
-        "luxuryName": "The Horizon Obsidian Spire",
+        "luxuryName": "The Obsidian Spire",
         "tagline": "Monolithic volcanic stone architecture crowned by private observatory decks",
         "concept": "Sculpted from matte obsidian stone and burnished bronze, offering 360-degree panoramic city views.",
-        "architect": "Studio David Adjaye",
+        "architect": "Monolithic Architectural Atelier",
         "highlights": ["Volcanic thermal pool", "Private helipad access", "Triple-glazed acoustic glass", "Cellar with sommelier concierge"]
     },
     "COM003": {
-        "luxuryName": "The Horizon Biophilic Canopy",
+        "luxuryName": "The Biophilic Canopy",
         "tagline": "Living forest architecture where vertical rainforests filter the city air",
         "concept": "Over 350 native plant species integrated into cascading residential sky terraces and hanging gardens.",
-        "architect": "WOHA Architects",
+        "architect": "Vertical Forest Architecture Studio",
         "highlights": ["Vertical micro-climate control", "Canopy suspension bridges", "Hydroponic community greenhouse", "Regenerative water capture"]
     },
     "COM004": {
-        "luxuryName": "The Horizon Cloud Pavilion",
+        "luxuryName": "The Cloud Pavilion",
         "tagline": "Weightless structural steel and glass cantilevered over parklands",
         "concept": "Airy, luminous spaces designed around shifting natural daylight and panoramic sky views.",
-        "architect": "SANAA / Kazuyo Sejima",
+        "architect": "Minimalist Structural Steel Studio",
         "highlights": ["Double-height 7m ceilings", "Frameless sliding glass envelopes", "Infinity sky deck", "Curated sculpture pavilion"]
     },
     "COM005": {
-        "luxuryName": "The Horizon Terraces",
+        "luxuryName": "The Cascading Terraces",
         "tagline": "Tiered architectural sanctuaries with private plunge pools on every level",
         "concept": "Cascading limestone terraces stepping down toward natural riverbanks, harmonizing indoor and outdoor.",
-        "architect": "Snøhetta",
+        "architect": "Nordic Landscape Architecture Atelier",
         "highlights": ["Private heated plunge pools", "Limestone firepits", "Outdoor culinary kitchens", "Direct river promenade access"]
     },
     "COM006": {
-        "luxuryName": "The Horizon Aurum Enclave",
+        "luxuryName": "The Aurum Enclave",
         "tagline": "Warm champagne bronze finishes and handcrafted artisan woodwork",
-        "concept": "Subtle Japanese craftsmanship meets Scandinavian minimalism in an exclusive 40-residence sanctuary.",
-        "architect": "Tadao Ando Architect & Associates",
+        "concept": "Subtle artisanal craftsmanship meets Scandinavian minimalism in an exclusive 40-residence sanctuary.",
+        "architect": "Monolithic Concrete & Zen Atelier",
         "highlights": ["Hand-poured smooth concrete", "Hinoki cedar onsen suites", "Private tea house in bamboo grove", "Underground supercar gallery"]
     },
     "COM007": {
-        "luxuryName": "The Horizon Botanica Reserve",
+        "luxuryName": "The Botanica Reserve",
         "tagline": "Preserved heritage rain trees cradling modern architectural glass pavilions",
         "concept": "A 12-acre private nature reserve where homes sit seamlessly among century-old heritage trees.",
-        "architect": "Foster + Partners",
+        "architect": "Sustainable High-Tech Architecture Studio",
         "highlights": ["Private nature reserve", "Canopy bird-watching lounge", "Solar micro-grid storage", "Electric off-road fleet"]
     },
     "COM008": {
-        "luxuryName": "The Horizon Zenith Tower",
+        "luxuryName": "The Zenith Tower",
         "tagline": "Ultra-high elevation living with dedicated high-speed private sky elevators",
-        "concept": "Rising 64 stories above the city, offering unencumbered horizon views from dawn to sunset.",
-        "architect": "Zaha Hadid Architects",
+        "concept": "Rising 64 stories above the city, offering unencumbered panoramic views from dawn to sunset.",
+        "architect": "Parametric Fluidity Architecture Studio",
         "highlights": ["Fluid aerodynamic exterior", "Double-deck high-speed elevators", "Observatory cigar lounge", "Cryotherapy wellness lab"]
     },
     "COM009": {
-        "luxuryName": "The Horizon Riverine Lofts",
+        "luxuryName": "The Riverine Lofts",
         "tagline": "Industrial elegance with soaring ceilings along tranquil canal pathways",
         "concept": "Textured steel, warm reclaimed timber, and expansive artist studios opening onto water.",
-        "architect": "Herzog & de Meuron",
+        "architect": "Industrial Elegance Design Atelier",
         "highlights": ["Curated art gallery lobby", "Private kayak launch dock", "Acoustically isolated music studios", "Wood-fired bakery on ground floor"]
     },
     "COM010": {
-        "luxuryName": "The Horizon Solarium Heights",
+        "luxuryName": "The Solarium Heights",
         "tagline": "Passive solar architecture with automated circadian spectral illumination",
         "concept": "Every residence is optimized for natural cross-ventilation and calibrated natural light cycles.",
-        "architect": "BIG - Bjarke Ingels Group",
+        "architect": "Hedonistic Sustainability Design Studio",
         "highlights": ["Smart sun-tracking louvers", "Zero-energy cooling system", "Rooftop star-gazing pod", "Biodynamic herb courtyards"]
     },
     "COM011": {
-        "luxuryName": "The Horizon Coastal Ridge",
+        "luxuryName": "The Coastal Ridge",
         "tagline": "Elevated ocean cliff residences catching perpetual maritime cross-breezes",
         "concept": "Perched above coastal ridgelines with tiered infinity pools reflecting the open sea.",
-        "architect": "Olson Kundig",
-        "highlights": ["Ocean horizon infinity edge", "Marine-grade bronze hardware", "Private beach access funicular", "Salt-water therapy lap pool"]
+        "architect": "Kinetic Coastal Architecture Studio",
+        "highlights": ["Ocean-facing infinity edge", "Marine-grade bronze hardware", "Private beach access funicular", "Salt-water therapy lap pool"]
     },
     "COM012": {
-        "luxuryName": "The Horizon Atrium Quarters",
+        "luxuryName": "The Atrium Quarters",
         "tagline": "Sculptural central lightwell channeling natural sunlight four storeys deep",
         "concept": "An internal oasis courtyard that filters natural rainforest mist and birdsong into every room.",
-        "architect": "MVRDV",
+        "architect": "Courtyard & Lightwell Design Studio",
         "highlights": ["Four-storey indoor waterfall", "Acoustic zen garden", "Retractable glass skylight roof", "Wine library with rare vintages"]
     },
     "COM013": {
-        "luxuryName": "The Horizon Mirador",
+        "luxuryName": "The Mirador Sanctuary",
         "tagline": "Panoramic viewing platforms that frame iconic city skylines",
         "concept": "Geometric floating volumes projecting outwards to frame bespoke landscape vignettes.",
-        "architect": "Heatherwick Studio",
-        "highlights": ["Cantilevered glass sky-walk", "Private chef tasting room", "EV fast-charging in every bay", "Sub-zero smart parcel reception"]
+        "architect": "Sculptural Spatial Design Studio",
+        "highlights": ["Cantilevered glass sky-walk", "Private chef tasting room", "EV fast-charging in every bay", "Climate-controlled smart parcel reception"]
     },
     "COM014": {
-        "luxuryName": "The Horizon Sylvan Sanctuary",
+        "luxuryName": "The Sylvan Sanctuary",
         "tagline": "A peaceful forest retreat crafted from charred yakisugi cedar and stone",
         "concept": "Understated luxury grounded in natural textures, silence, and restorative landscape architecture.",
-        "architect": "Sou Fujimoto",
+        "architect": "Primitive Forest Architecture Atelier",
         "highlights": ["Charred yakisugi timber screens", "Silent reading pavilions", "Forest meditation trails", "Geothermal underfloor cooling"]
     },
     "COM015": {
-        "luxuryName": "The Horizon Equinox",
+        "luxuryName": "The Equinox Pavilion",
         "tagline": "A perfectly balanced urban resort designed around wellness and longevity",
         "concept": "Collaborative wellness architecture with integrated medical check-up pods and circadian lighting.",
-        "architect": "Gensler Luxury Group",
+        "architect": "Urban Resort & Wellness Studio",
         "highlights": ["Longevity medical lab", "Hyperbaric oxygen chambers", "Olympic length ozone pool", "Private nutrition kitchen"]
     },
     "COM016": {
-        "luxuryName": "The Horizon Halcyon Bay",
+        "luxuryName": "The Halcyon Bay",
         "tagline": "Protected marine sanctuary homes with private shoreline boardwalks",
         "concept": "Curved white architectural ribbons embracing the coastline and sunset reflections.",
-        "architect": "Jean Nouvel",
+        "architect": "Marine Sanctuary Architecture Atelier",
         "highlights": ["Protected coral reef lagoon", "Paddleboard launch deck", "Seaside amphitheatre", "Private catamaran charter service"]
     },
     "COM017": {
-        "luxuryName": "The Horizon Apex Suites",
+        "luxuryName": "The Apex Suites",
         "tagline": "Bespoke collector penthouses with private museum-grade display galleries",
         "concept": "Tailored for art collectors, featuring temperature-controlled display walls and UV-filtered glass.",
-        "architect": "Renzo Piano Building Workshop",
+        "architect": "Museum-Grade Residential Atelier",
         "highlights": ["Museum-grade lighting systems", "High-capacity art hoist elevator", "Climate-controlled vault", "Sculpture sky court"]
     },
     "COM018": {
-        "luxuryName": "The Horizon Vayu Courtyard",
+        "luxuryName": "The Vayu Courtyard",
         "tagline": "Aerodynamic wind-funneling architecture providing perpetual natural cooling",
         "concept": "Engineered using computational fluid dynamics to reduce air-conditioning need by 65%.",
-        "architect": "Buro Ole Scheeren",
+        "architect": "Aerodynamic Wind Architecture Studio",
         "highlights": ["Wind-catchers on rooftops", "Natural bamboo breeze tunnels", "Fog-misting courtyards", "Zero-carbon communal kitchen"]
     },
     "COM019": {
-        "luxuryName": "The Horizon Lumina Cascades",
+        "luxuryName": "The Lumina Cascades",
         "tagline": "Crystalline glass architecture illuminated by ambient evening fiber-optics",
         "concept": "A shimmering landmark that shifts from soft champagne gold by day to ethereal amber at dusk.",
-        "architect": "Safdie Architects",
+        "architect": "Crystalline Light Architecture Studio",
         "highlights": ["Cascading water wall", "Interactive light art installation", "Rooftop champagne bar", "Private resident theatre"]
     },
     "COM020": {
-        "luxuryName": "The Horizon Terra Firma",
+        "luxuryName": "The Terra Firma Estate",
         "tagline": "Rammed-earth monolithic villas rooted in geological permanence",
         "concept": "Crafted from locally sourced sedimentary soils and stone, achieving supreme thermal mass and organic beauty.",
-        "architect": "Peter Zumthor",
+        "architect": "Rammed-Earth & Thermal Stone Atelier",
         "highlights": ["400mm thick rammed-earth walls", "Thermal subterranean wine cellar", "Mineral spring bathhouse", "Star observatory terrace"]
     }
 }
 
 DISTRICT_DETAILS = {
-    "District 1": {"region": "Marina Bay & Raffles Place", "vibe": "Ultra-Prime Waterfront", "desc": "Global financial nexus, iconic bay horizons, and super-prime skyscraper penthouses.", "coords": {"x": 52, "y": 70}},
+    "District 1": {"region": "Marina Bay & Raffles Place", "vibe": "Ultra-Prime Waterfront", "desc": "Global financial nexus, iconic bay waters, and super-prime skyscraper penthouses.", "coords": {"x": 52, "y": 70}},
     "District 2": {"region": "Tanjong Pagar & Chinatown", "vibe": "Historic Fusion & High-Design", "desc": "Heritage conserved shophouses intertwining with futuristic green towers.", "coords": {"x": 48, "y": 73}},
     "District 3": {"region": "Alexandra & Queenstown", "vibe": "Biophilic Urban Corridor", "desc": "Lush park connectors, tree-canopy towers, and creative studio clusters.", "coords": {"x": 42, "y": 68}},
     "District 4": {"region": "Sentosa Cove & Keppel Bay", "vibe": "Exclusive Island & Marina Living", "desc": "Private yacht berths, coral lagoons, and oceanfront sanctuaries.", "coords": {"x": 45, "y": 82}},
@@ -210,10 +211,10 @@ DISTRICT_DETAILS = {
 
 RESIDENCE_LAYOUTS = [
     "Garden Courtyard Villa", "The Sky Terrace Suite", "The Monolith Penthouse", "The Duplex Atrium",
-    "The Horizon Grand Residence", "The Obsidian Loft", "The Panoramic Corner Suite", "The Waterfront Pavilion"
+    "The Grand Residence", "The Obsidian Loft", "The Panoramic Corner Suite", "The Waterfront Pavilion"
 ]
 
-ORIENTATIONS = ["North-South Sea Facing", "East Horizon Sunrise", "West Marina Sunset", "Panoramic 270° Skyline"]
+ORIENTATIONS = ["North-South Sea Facing", "East Panoramic Sunrise", "West Marina Sunset", "Panoramic 270° Skyline"]
 
 AMENITY_CATEGORIES = ["Wellness", "Sports", "Family", "Business", "Leisure", "Community"]
 AMENITY_DESCRIPTIONS = [
@@ -222,16 +223,16 @@ AMENITY_DESCRIPTIONS = [
     "25-meter cantilevered infinity lap pool floating over the forest canopy.",
     "Professional squash court with shock-absorbent hardwood flooring and stadium viewing.",
     "Biophilic co-working library with high-speed quantum fiber and acoustic focus pods.",
-    "Private screening cinema with Dolby Atmos sound and Italian leather reclining lounges.",
-    "Rooftop culinary pavilion equipped with wood-fired ovens and sommelier tasting stations.",
+    "Private screening cinema with immersive surround acoustics and leather reclining lounges.",
+    "Rooftop culinary pavilion equipped with wood-fired hearths and sommelier tasting stations.",
     "Montessori-inspired nature play laboratory with safe water features and sensory gardens.",
     "Private golf simulation studio with 4K laser projection of world-class championship courses.",
     "Soundproof podcast and multimedia production studio with broadcast-grade equipment.",
     "Herbal apothecary conservatory where residents harvest organic medicinal botanicals.",
     "Heated Himalayan salt stone sauna promoting respiratory detoxification and deep sleep.",
-    "Dedicated supercar climate-controlled vault with detailing bay and charging nodes.",
+    "Dedicated climate-controlled vehicle vault with detailing bay and smart charging nodes.",
     "Pet grooming spa and agility obstacle courtyard for canine companions.",
-    "Outdoor amphitheatre hosting sunset chamber music and indie architectural screenings.",
+    "Outdoor amphitheatre hosting sunset acoustic performances and architectural screenings.",
     "Bespoke wine tasting cellar managed by resident master sommeliers."
 ]
 
@@ -240,7 +241,7 @@ AMENITY_NAMES = {
     "Sports": ["Olympic Cantilevered Lap Pool", "High-Tech Golf Simulator", "Panoramic Squash Court", "Outdoor Padel Tennis Court", "Bouldering Wall", "Pilates Reformer Studio"],
     "Family": ["Montessori Forest Nursery", "Pebble Splash Garden", "Stargazing Treehouse", "Interactive STEM Maker Lab", "Children's Reading Dome", "Family Barbecue Lawn"],
     "Business": ["Executive Boardroom Suite", "Soundproof Podcast Studio", "Quantum Fiber Co-working", "Private Video Conference Pods", "Financial Terminal Lounge", "Courier Concierge Center"],
-    "Leisure": ["Dolby Atmos Cinema Lounge", "Bespoke Wine Cellar", "Artisan Coffee Roastery", "Rooftop Starlight Observatory", "Japanese Zen Garden", "Billiards & Cigar Salon"],
+    "Leisure": ["Immersive Sound Cinema Lounge", "Bespoke Wine Cellar", "Artisan Coffee Roastery", "Rooftop Starlight Observatory", "Japanese Zen Garden", "Billiards & Cigar Salon"],
     "Community": ["Organic Botanical Greenhouse", "Resident Herb Courtyard", "Sunset Culinary Pavilion", "Community Amphitheatre", "Pet Pampering Parlour", "Maker Workshop & Tool Library"]
 }
 
@@ -326,7 +327,7 @@ CUSTOMER_ROLES = [
 ]
 
 CUSTOMER_QUOTES = [
-    "Moving into Horizon Living felt less like purchasing property and more like stepping 20 years into the future. The acoustic tranquility in the middle of the city is unmatched.",
+    "Moving into Dagsis Property 4 Dummy felt less like purchasing property and more like stepping 20 years into the future. The acoustic tranquility in the middle of the city is unmatched.",
     "The circadian spectral lighting and the pure air filtration system transformed my sleep quality from night one. It is rare to see architecture so deeply respectful of human biology.",
     "The private yacht mooring and the cantilevered infinity terrace have hosted the most unforgettable sunsets with our family. We wouldn't trade this for any penthouse worldwide.",
     "As an architect, I scrutinize every joint, reveal, and material interface. The execution here is museum-grade: honest materials, monolithic stone, and sublime proportions.",
@@ -348,10 +349,10 @@ enriched_communities = []
 for i, c in enumerate(raw_data["communities"]):
     cid = c["community_id"]
     meta = COMMUNITY_META.get(cid, {
-        "luxuryName": f"Horizon Sanctuary {i+1}",
+        "luxuryName": f"Sanctuary Enclave {i+1}",
         "tagline": "Architectural elegance designed for generational serenity",
         "concept": "Contemporary luxury residences engineered with biophilic finishes.",
-        "architect": "Foster + Partners",
+        "architect": "Master Architectural Studio",
         "highlights": ["Infinity sky pool", "Private elevator foyer", "Smart home matrix", "Concierge valet"]
     })
     smart_score = 92 + (i % 8)
@@ -406,7 +407,7 @@ for i, r in enumerate(raw_data["residences"]):
     enriched_residences.append({
         "residence_id": r["residence_id"],
         "community_id": r["community_id"],
-        "community_name": comm_map.get(r["community_id"], "Horizon Enclave"),
+        "community_name": comm_map.get(r["community_id"], "Residential Enclave"),
         "luxuryName": luxury_name,
         "collectionType": layout,
         "floorLevel": f"Level {floor}",
@@ -420,7 +421,7 @@ for i, r in enumerate(raw_data["residences"]):
             f"{r['bedrooms']} En-Suite Bedrooms",
             f"{r['bathrooms']} Marble Clad Bathrooms",
             f"{r['area_sqft']} Sq.Ft. Living Canvas",
-            "Sub-Zero & Wolf Kitchen Suite",
+            "Integrated Professional Kitchen Suite",
             "Private High-Speed Lift Lobby",
             "Motorized Floor-to-Ceiling Glazing"
         ]
@@ -443,12 +444,12 @@ for i, a in enumerate(raw_data["amenities"]):
     })
 
 enriched_schools = []
-school_types = ["International Baccalaureate World School", "Premier Autonomous High School", "Primary Science & Arts Academy", "British Curriculum College"]
-curriculums = ["IB Diploma Programme", "Cambridge IGCSE & A-Levels", "Integrated Programme (IP)", "Advanced Placement (AP)"]
+school_types = ["International Baccalaureate World School", "Premier Autonomous High School", "Primary Science & Arts Academy", "Advanced Curriculum College"]
+curriculums = ["IB Diploma Programme", "Cambridge International & A-Levels", "Integrated Programme (IP)", "Advanced Placement (AP)"]
 for i, s in enumerate(raw_data["schools"]):
     enriched_schools.append({
         "id": s["id"],
-        "curatedName": f"Horizon Academy & Institute {i+1}",
+        "curatedName": f"Premier Academy & Institute {i+1}",
         "type": school_types[i % len(school_types)],
         "curriculum": curriculums[i % len(curriculums)],
         "distanceKm": round(0.4 + (i % 15) * 0.2, 1)
@@ -484,9 +485,9 @@ for i, lz in enumerate(raw_data["lifestyle_zones"]):
         "category": cat,
         "tagline": f"Immersive {cat.lower()} curated for discerning residents",
         "description": "A masterfully designed experiential zone elevating daily life through sensory architectural details, fine textures, and tranquil environments.",
-        "curator": f"Horizon Lifestyle Collective & Studio {i+1}",
+        "curator": f"Curated Lifestyle Collective & Studio {i+1}",
         "hours": "06:00 — 23:00 Daily",
-        "tags": [cat, "Curated Experience", "Horizon Exclusive", "Concierge Reserved"]
+        "tags": [cat, "Curated Experience", "Masterplan Exclusive", "Concierge Reserved"]
     })
 
 enriched_smart = []
@@ -524,7 +525,7 @@ for i, inv in enumerate(raw_data["investment_insights"]):
 
 enriched_financing = []
 fin_plans = [
-    {"name": "Horizon Green ESG Green Mortgages", "rateType": "Fixed ESG Green Tier", "rate": 2.45, "minDown": 20, "rebate": 1.5},
+    {"name": "Green ESG Architectural Mortgages", "rateType": "Fixed ESG Green Tier", "rate": 2.45, "minDown": 20, "rebate": 1.5},
     {"name": "Private Wealth Capital Flexibility Facility", "rateType": "Private Wealth Bespoke", "rate": 2.75, "minDown": 25, "rebate": 2.0},
     {"name": "Generational Trust & Family Office Facility", "rateType": "Floating Prime Benchmark", "rate": 2.85, "minDown": 30, "rebate": 2.5}
 ]
@@ -558,31 +559,31 @@ month_names = ["Oct", "Nov", "Dec"]
 time_slots = ["10:30 AM — 12:00 PM", "02:00 PM — 03:30 PM", "05:00 PM — 06:30 PM Sunset Slot", "07:30 PM — 09:00 PM Private Night View"]
 for i, ve in enumerate(raw_data["viewing_events"]):
     target_comm = enriched_communities[i % len(enriched_communities)]
-    future_day = 1 + (i % 30)
-    month = month_names[(i // 50) % 3]
     enriched_viewings.append({
         "id": ve["id"],
         "communityId": target_comm["community_id"],
         "communityName": target_comm["name"],
-        "dateStr": f"{month} {future_day}, 2026",
-        "timeSlot": time_slots[i % len(time_slots)],
         "format": tour_formats[i % len(tour_formats)],
         "host": tour_hosts[i % len(tour_hosts)],
-        "slotsAvailable": ve["slots"]
+        "dateStr": f"{month_names[i % 3]} {10 + (i % 18)}, 2026",
+        "timeSlot": time_slots[i % len(time_slots)],
+        "slotsAvailable": 2 + (i % 4)
     })
 
 enriched_comparisons = []
-for i, cmp_item in enumerate(raw_data["project_comparisons"]):
-    comm_a = next((c for c in enriched_communities if c["community_id"] == cmp_item["project_a"]), enriched_communities[0])
-    comm_b = next((c for c in enriched_communities if c["community_id"] == cmp_item["project_b"]), enriched_communities[1])
+for i, cmp_raw in enumerate(raw_data["project_comparisons"]):
+    comm_a = enriched_communities[i % len(enriched_communities)]
+    comm_b = enriched_communities[(i + 5) % len(enriched_communities)]
     enriched_comparisons.append({
-        "id": cmp_item["id"],
-        "projectA": {"id": comm_a["community_id"], "name": comm_a["name"], "price": comm_a["starting_price_sgd"]},
-        "projectB": {"id": comm_b["community_id"], "name": comm_b["name"], "price": comm_b["starting_price_sgd"]},
+        "id": cmp_raw["id"],
+        "communityA_id": comm_a["community_id"],
+        "communityA_name": comm_a["name"],
+        "communityB_id": comm_b["community_id"],
+        "communityB_name": comm_b["name"],
         "headline": f"{comm_a['name']} vs {comm_b['name']}",
-        "advantageA": f"Superior waterfront panorama & {comm_a['sustainabilityScore']}% net-zero sustainability architecture.",
-        "advantageB": f"Denser lifestyle amenity integration with starting threshold of SGD ${(comm_b['starting_price_sgd'] / 1000000):.2f}M.",
-        "recommendationThesis": f"Select {comm_a['name']} for immediate coastal calm; choose {comm_b['name']} for high-transit urban vitality."
+        "advantageA": f"Superior {comm_a['highlights'][0]} paired with {comm_a['tagline']}.",
+        "advantageB": f"Distinctive {comm_b['highlights'][0]} crowned by {comm_b['tagline']}.",
+        "recommendationThesis": f"Choose {comm_a['name']} for prime waterfront and biophilic serenity, or {comm_b['name']} for elevated monolithic tranquility and rapid civic transit."
     })
 
 enriched_customer_stories = []
@@ -593,9 +594,8 @@ for i, cs in enumerate(raw_data["customer_stories"]):
     target_res = enriched_residences[i % len(enriched_residences)]
     enriched_customer_stories.append({
         "id": cs["id"],
-        "customerName": cs["customer"],
+        "customerName": f"Resident {chr(65 + (i % 26))}{str(i+1).zfill(2)}",
         "role": role,
-        "rating": cs["rating"],
         "communityPurchased": target_comm["name"],
         "residenceModel": target_res["luxuryName"],
         "yearPurchased": 2024 + (i % 3),
@@ -606,7 +606,7 @@ for i, cs in enumerate(raw_data["customer_stories"]):
 # Consolidated master dictionary
 knowledge_corpus = {
     "brand": {
-        "name": "Horizon Living",
+        "name": "Dagsis Property 4 Dummy",
         "tagline": "Architectural Elegance for Generational Living",
         "philosophy": "We synthesize biophilic architecture, net-zero engineering, and bespoke private wealth financing into timeless residential sanctuaries across Singapore.",
         "pillars": [
@@ -616,17 +616,19 @@ knowledge_corpus = {
             "Generational Capital Preservation: Defensive prime assets situated in high-growth districts."
         ],
         "curatedArchitects": [
-            "Foster + Partners", "Kengo Kuma & Associates", "Studio David Adjaye", "WOHA Architects",
-            "SANAA / Kazuyo Sejima", "Snøhetta", "Tadao Ando Architect & Associates", "Zaha Hadid Architects",
-            "Herzog & de Meuron", "BIG - Bjarke Ingels Group", "Olson Kundig", "MVRDV",
-            "Heatherwick Studio", "Sou Fujimoto", "Gensler Luxury Group", "Jean Nouvel",
-            "Renzo Piano Building Workshop", "Buro Ole Scheeren", "Safdie Architects", "Peter Zumthor"
+            "Biophilic Design Atelier", "Monolithic Architectural Atelier", "Vertical Forest Architecture Studio",
+            "Minimalist Structural Steel Studio", "Nordic Landscape Architecture Atelier", "Monolithic Concrete & Zen Atelier",
+            "Sustainable High-Tech Architecture Studio", "Parametric Fluidity Architecture Studio", "Industrial Elegance Design Atelier",
+            "Hedonistic Sustainability Design Studio", "Kinetic Coastal Architecture Studio", "Courtyard & Lightwell Design Studio",
+            "Sculptural Spatial Design Studio", "Primitive Forest Architecture Atelier", "Urban Resort & Wellness Studio",
+            "Marine Sanctuary Architecture Atelier", "Museum-Grade Residential Atelier", "Aerodynamic Wind Architecture Studio",
+            "Crystalline Light Architecture Studio", "Rammed-Earth & Thermal Stone Atelier"
         ],
-        "headquarters": "Marina Bay Financial Centre Tower 2, Level 48, Singapore 018983",
-        "conciergeDirect": "+65 6800 8899 | concierge@horizonliving.sg"
+        "headquarters": "123, Street ABC, State XYZ, Pin-000000",
+        "conciergeDirect": "+65 XXXXXXXXX | concierge@dagsisproperty4dummy.com"
     },
     "ai_system_instructions": {
-        "persona": "Senior Spatial Concierge & Private Client Advisor for Horizon Living Singapore",
+        "persona": "Senior Spatial Concierge & Private Client Advisor for Dagsis Property 4 Dummy",
         "voice": "Cultivated, articulate, warm, authoritative, discreet, and deeply versed in architecture and finance.",
         "directives": [
             "Always maintain discretion regarding client identity and net worth.",
@@ -655,129 +657,138 @@ knowledge_corpus = {
 # -------------------------------------------------------------------------
 # 3. EXPORT JSON CORPUS
 # -------------------------------------------------------------------------
-json_path = "horizon_living_knowledge_base.json"
-with open(json_path, "w", encoding="utf-8") as f:
-    json.dump(knowledge_corpus, f, indent=2, ensure_ascii=False)
-print(f"Exported JSON knowledge corpus: {json_path}")
+json_path = "dagsis_property_4_dummy_knowledge_base.json"
+legacy_json_path = "horizon_living_knowledge_base.json"
+
+for p in [json_path, legacy_json_path]:
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(knowledge_corpus, f, indent=2, ensure_ascii=False)
+print(f"Exported JSON knowledge corpus: {json_path} and {legacy_json_path}")
 
 # -------------------------------------------------------------------------
 # 4. EXPORT MARKDOWN CORPUS (For Custom GPTs, Claude Projects & RAG)
 # -------------------------------------------------------------------------
-md_path = "HORIZON_LIVING_AI_KNOWLEDGE_BASE.md"
-with open(md_path, "w", encoding="utf-8") as f:
-    f.write("# HORIZON LIVING — MASTER AI KNOWLEDGE BASE & CORPUS\n\n")
-    f.write("> **CONFIDENTIAL & PROPRIETARY ARCHITECTURAL REFERENCE**\n")
-    f.write(f"> **Document Version:** 2.4.0 Master Edition | **Generated:** {datetime.now().strftime('%B %Y')}\n")
-    f.write("> **Purpose:** Comprehensive ingestion dataset for AI Chatbots, RAG Vector Databases, and Private Wealth Concierges.\n\n")
+md_content = []
+md_content.append("# DAGSIS PROPERTY 4 DUMMY — MASTER AI KNOWLEDGE BASE & CORPUS\n\n")
+md_content.append("> **CONFIDENTIAL & PROPRIETARY ARCHITECTURAL REFERENCE**\n")
+md_content.append(f"> **Document Version:** 2.4.0 Master Edition | **Generated:** {datetime.now().strftime('%B %Y')}\n")
+md_content.append("> **Purpose:** Comprehensive ingestion dataset for AI Chatbots, RAG Vector Databases, and Private Wealth Concierges.\n\n")
 
-    f.write("## 0. AI CHATBOT PERSONA & SYSTEM PROMPT\n\n")
-    f.write(f"**Persona Role:** {knowledge_corpus['ai_system_instructions']['persona']}\n\n")
-    f.write(f"**Voice & Demeanor:** {knowledge_corpus['ai_system_instructions']['voice']}\n\n")
-    f.write("### Core Operating Guidelines for AI Ingestion:\n")
-    for d in knowledge_corpus['ai_system_instructions']['directives']:
-        f.write(f"- {d}\n")
-    f.write("\n---\n\n")
+md_content.append("## 0. AI CHATBOT PERSONA & SYSTEM PROMPT\n\n")
+md_content.append(f"**Persona Role:** {knowledge_corpus['ai_system_instructions']['persona']}\n\n")
+md_content.append(f"**Voice & Demeanor:** {knowledge_corpus['ai_system_instructions']['voice']}\n\n")
+md_content.append("### Core Operating Guidelines for AI Ingestion:\n")
+for d in knowledge_corpus['ai_system_instructions']['directives']:
+    md_content.append(f"- {d}\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 1. BRAND MANIFESTO & PHILOSOPHY\n\n")
-    f.write(f"**Tagline:** {knowledge_corpus['brand']['tagline']}\n\n")
-    f.write(f"{knowledge_corpus['brand']['philosophy']}\n\n")
-    f.write("### Strategic Pillars:\n")
-    for p in knowledge_corpus['brand']['pillars']:
-        f.write(f"- {p}\n")
-    f.write(f"\n**Concierge Contact:** `{knowledge_corpus['brand']['conciergeDirect']}`\n")
-    f.write(f"**Headquarters:** `{knowledge_corpus['brand']['headquarters']}`\n\n")
-    f.write("---\n\n")
+md_content.append("## 1. BRAND MANIFESTO & PHILOSOPHY\n\n")
+md_content.append(f"**Tagline:** {knowledge_corpus['brand']['tagline']}\n\n")
+md_content.append(f"{knowledge_corpus['brand']['philosophy']}\n\n")
+md_content.append("### Strategic Pillars:\n")
+for p in knowledge_corpus['brand']['pillars']:
+    md_content.append(f"- {p}\n")
+md_content.append(f"\n**Concierge Contact:** `{knowledge_corpus['brand']['conciergeDirect']}`\n")
+md_content.append(f"**Headquarters:** `{knowledge_corpus['brand']['headquarters']}`\n\n")
+md_content.append("---\n\n")
 
-    f.write("## 2. MASTER PLANNED COMMUNITIES (20 PORTFOLIO PROFILES)\n\n")
-    for c in enriched_communities:
-        f.write(f"### {c['name']} (`{c['community_id']}`)\n")
-        f.write(f"- **District:** {c['district']} | **Starting Price:** {format_sgd(c['starting_price_sgd'])} | **Status:** {c['availability']}\n")
-        f.write(f"- **Architect:** {c['architect']} | **Units:** {c['unitsCount']} | **Energy Rating:** {c['energyRating']}\n")
-        f.write(f"- **Smart Score:** {c['smartScore']}/100 | **Sustainability Score:** {c['sustainabilityScore']}/100\n")
-        f.write(f"- **Concept:** {c['concept']}\n")
-        f.write(f"- **Signature Highlights:** {', '.join(c['highlights'])}\n\n")
-    f.write("---\n\n")
+md_content.append("## 2. MASTER PLANNED COMMUNITIES (20 PORTFOLIO PROFILES)\n\n")
+for c in enriched_communities:
+    md_content.append(f"### {c['name']} (`{c['community_id']}`)\n")
+    md_content.append(f"- **District:** {c['district']} | **Starting Price:** {format_sgd(c['starting_price_sgd'])} | **Status:** {c['availability']}\n")
+    md_content.append(f"- **Architect:** {c['architect']} | **Units:** {c['unitsCount']} | **Energy Rating:** {c['energyRating']}\n")
+    md_content.append(f"- **Smart Score:** {c['smartScore']}/100 | **Sustainability Score:** {c['sustainabilityScore']}/100\n")
+    md_content.append(f"- **Concept:** {c['concept']}\n")
+    md_content.append(f"- **Signature Highlights:** {', '.join(c['highlights'])}\n\n")
+md_content.append("---\n\n")
 
-    f.write("## 3. GEOSPATIAL DISTRICTS DIRECTORY (30 SINGAPORE DISTRICTS)\n\n")
-    for d in enriched_districts:
-        f.write(f"### {d['code']}: {d['name']} — {d['region']}\n")
-        f.write(f"- **Vibe:** {d['vibe']}\n")
-        f.write(f"- **Overview:** {d['description']}\n")
-        f.write(f"- **Transit Score:** {d['transitScore']}/100 | **Greenery Ratio:** {d['greeneryRatio']} | **5Y Growth Average:** {d['growthAverage']}\n\n")
-    f.write("---\n\n")
+md_content.append("## 3. GEOSPATIAL DISTRICTS DIRECTORY (30 SINGAPORE DISTRICTS)\n\n")
+for d in enriched_districts:
+    md_content.append(f"### {d['code']}: {d['name']} — {d['region']}\n")
+    md_content.append(f"- **Vibe:** {d['vibe']}\n")
+    md_content.append(f"- **Overview:** {d['description']}\n")
+    md_content.append(f"- **Transit Score:** {d['transitScore']}/100 | **Greenery Ratio:** {d['greeneryRatio']} | **5Y Growth Average:** {d['growthAverage']}\n\n")
+md_content.append("---\n\n")
 
-    f.write("## 4. ARCHITECTURAL RESIDENCES MASTER LEDGER (120 UNITS)\n\n")
-    f.write("| ID | Community | Model / Unit | Floor & Orientation | Beds | Baths | Sq.Ft. | Price (SGD) | Rate (SGD/psf) |\n")
-    f.write("|---|---|---|---|---|---|---|---|---|\n")
-    for r in enriched_residences:
-        f.write(f"| `{r['residence_id']}` | {r['community_name']} | {r['luxuryName']} | {r['floorLevel']}, {r['orientation']} | {r['bedrooms']} | {r['bathrooms']} | {r['area_sqft']} | {format_sgd(r['price_sgd'])} | SGD ${r['pricePerSqft']:,}/psf |\n")
-    f.write("\n---\n\n")
+md_content.append("## 4. ARCHITECTURAL RESIDENCES MASTER LEDGER (120 UNITS)\n\n")
+md_content.append("| ID | Community | Model / Unit | Floor & Orientation | Beds | Baths | Sq.Ft. | Price (SGD) | Rate (SGD/psf) |\n")
+md_content.append("|---|---|---|---|---|---|---|---|---|\n")
+for r in enriched_residences:
+    md_content.append(f"| `{r['residence_id']}` | {r['community_name']} | {r['luxuryName']} | {r['floorLevel']}, {r['orientation']} | {r['bedrooms']} | {r['bathrooms']} | {r['area_sqft']} | {format_sgd(r['price_sgd'])} | SGD ${r['pricePerSqft']:,}/psf |\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 5. CURATED AMENITIES DIRECTORY (100 FACILITIES)\n\n")
-    for a in enriched_amenities:
-        f.write(f"- **`{a['id']}` {a['curatedName']}** [{a['category']}]: {a['description']} *(Privileges: {', '.join(a['perks'])})*\n")
-    f.write("\n---\n\n")
+md_content.append("## 5. CURATED AMENITIES DIRECTORY (100 FACILITIES)\n\n")
+for a in enriched_amenities:
+    md_content.append(f"- **`{a['id']}` {a['curatedName']}** [{a['category']}]: {a['description']} *(Privileges: {', '.join(a['perks'])})*\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 6. LIFESTYLE REALMS & EXPERIENTIAL ZONES (40 ZONES)\n\n")
-    for lz in enriched_lifestyle:
-        f.write(f"- **`{lz['id']}` {lz['curatedName']}** [{lz['category']}]: {lz['description']} *Hours: {lz['hours']} | Curator: {lz['curator']}*\n")
-    f.write("\n---\n\n")
+md_content.append("## 6. LIFESTYLE REALMS & EXPERIENTIAL ZONES (40 ZONES)\n\n")
+for lz in enriched_lifestyle:
+    md_content.append(f"- **`{lz['id']}` {lz['curatedName']}** [{lz['category']}]: {lz['description']} *Hours: {lz['hours']} | Curator: {lz['curator']}*\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 7. SMART LIVING INTELLIGENCE (40 FEATURES)\n\n")
-    for sf in enriched_smart:
-        f.write(f"- **`{sf['id']}` {sf['curatedName']}** [{sf['category']}]: {sf['description']} (Benchmark: `{sf['metric']}`)\n")
-    f.write("\n---\n\n")
+md_content.append("## 7. SMART LIVING INTELLIGENCE (40 FEATURES)\n\n")
+for sf in enriched_smart:
+    md_content.append(f"- **`{sf['id']}` {sf['curatedName']}** [{sf['category']}]: {sf['description']} (Benchmark: `{sf['metric']}`)\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 8. INVESTMENT STUDIO & DISTRICT PROJECTIONS (50 PROJECTIONS)\n\n")
-    for inv in enriched_investments:
-        f.write(f"- **`{inv['id']}` {inv['districtName']}**: Growth `{inv['growthFormatted']}` | Rental Yield `{inv['rentalYield']}` | 5Y Appreciation `{inv['fiveYearAppreciationEst']}` | Strategy: **{inv['capitalRecommendation']}**\n")
-    f.write("\n---\n\n")
+md_content.append("## 8. INVESTMENT STUDIO & DISTRICT PROJECTIONS (50 PROJECTIONS)\n\n")
+for inv in enriched_investments:
+    md_content.append(f"- **`{inv['id']}` {inv['districtName']}**: Growth `{inv['growthFormatted']}` | Rental Yield `{inv['rentalYield']}` | 5Y Appreciation `{inv['fiveYearAppreciationEst']}` | Strategy: **{inv['capitalRecommendation']}**\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 9. PRIVATE WEALTH FINANCING PROGRAMS (25 CAPITAL STRUCTURES)\n\n")
-    for fin in enriched_financing:
-        f.write(f"- **`{fin['id']}` {fin['planName']}**: Base Rate `{fin['baseRate']}%` | Min Down `{fin['minDownPaymentPct']}%` | Green Rebate `{fin['rebatePercent']}%`\n")
-    f.write("\n---\n\n")
+md_content.append("## 9. PRIVATE WEALTH FINANCING PROGRAMS (25 CAPITAL STRUCTURES)\n\n")
+for fin in enriched_financing:
+    md_content.append(f"- **`{fin['id']}` {fin['planName']}**: Base Rate `{fin['baseRate']}%` | Min Down `{fin['minDownPaymentPct']}%` | Green Rebate `{fin['rebatePercent']}%`\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 10. PRIVATE VIEWING EVENTS & CONCIERGE PROTOCOL (150 SLOTS)\n\n")
-    for ve in enriched_viewings[:30]:  # sample representative slots in summary
-        f.write(f"- **`{ve['id']}` {ve['communityName']}**: {ve['format']} on {ve['dateStr']} ({ve['timeSlot']}) with Host: {ve['host']} [{ve['slotsAvailable']} slots]\n")
-    f.write(f"*(Total 150 calibrated private viewing slots indexed across Oct–Dec 2026)*\n\n---\n\n")
+md_content.append("## 10. PRIVATE VIEWING EVENTS & CONCIERGE PROTOCOL (150 SLOTS)\n\n")
+for ve in enriched_viewings[:30]:
+    md_content.append(f"- **`{ve['id']}` {ve['communityName']}**: {ve['format']} on {ve['dateStr']} ({ve['timeSlot']}) with Host: {ve['host']} [{ve['slotsAvailable']} slots]\n")
+md_content.append("*(Total 150 calibrated private viewing slots indexed across Oct–Dec 2026)*\n\n---\n\n")
 
-    f.write("## 11. DUAL ENCLAVE COMPARATIVE MATRICES (50 COMPARISONS)\n\n")
-    for cmp_item in enriched_comparisons[:15]:
-        f.write(f"### `{cmp_item['id']}`: {cmp_item['headline']}\n")
-        f.write(f"- **Advantage A:** {cmp_item['advantageA']}\n")
-        f.write(f"- **Advantage B:** {cmp_item['advantageB']}\n")
-        f.write(f"- **Advisory Thesis:** {cmp_item['recommendationThesis']}\n\n")
-    f.write(f"*(Total 50 multi-dimensional comparative matrices available in full database)*\n\n---\n\n")
+md_content.append("## 11. DUAL ENCLAVE COMPARATIVE MATRICES (50 COMPARISONS)\n\n")
+for cmp_item in enriched_comparisons[:15]:
+    md_content.append(f"### `{cmp_item['id']}`: {cmp_item['headline']}\n")
+    md_content.append(f"- **Advantage A:** {cmp_item['advantageA']}\n")
+    md_content.append(f"- **Advantage B:** {cmp_item['advantageB']}\n")
+    md_content.append(f"- **Advisory Thesis:** {cmp_item['recommendationThesis']}\n\n")
+md_content.append("*(Total 50 multi-dimensional comparative matrices available in full database)*\n\n---\n\n")
 
-    f.write("## 12. VERIFIED RESIDENT TESTIMONIALS (100 STORIES)\n\n")
-    for cs in enriched_customer_stories[:20]:
-        f.write(f"- **{cs['customerName']}** ({cs['role']}) — Purchased: *{cs['residenceModel']} at {cs['communityPurchased']} ({cs['yearPurchased']})*\n")
-        f.write(f'  > "{cs["quote"]}"\n\n')
-    f.write(f"*(Total 100 verified customer stories indexed in full database)*\n\n---\n\n")
+md_content.append("## 12. VERIFIED RESIDENT TESTIMONIALS (100 STORIES)\n\n")
+for cs in enriched_customer_stories[:20]:
+    md_content.append(f"- **{cs['customerName']}** ({cs['role']}) — Purchased: *{cs['residenceModel']} at {cs['communityPurchased']} ({cs['yearPurchased']})*\n")
+    md_content.append(f'  > "{cs["quote"]}"\n\n')
+md_content.append("*(Total 100 verified customer stories indexed in full database)*\n\n---\n\n")
 
-    f.write("## 13. CIVIC INFRASTRUCTURE: SCHOOLS & TRANSIT\n\n")
-    f.write("### Elite Academic Institutions (50 Academies):\n")
-    for s in enriched_schools[:15]:
-        f.write(f"- **{s['curatedName']}**: {s['type']} ({s['curriculum']}) — {s['distanceKm']} km\n")
-    f.write("\n### Rapid Transit & Mobility Arterials (50 Connections):\n")
-    for t in enriched_transports[:15]:
-        f.write(f"- **{t['curatedName']}** [{t['type']}]: Lines: {', '.join(t['lines'])} — {t['distanceKm']} km\n")
-    f.write("\n---\n\n")
+md_content.append("## 13. CIVIC INFRASTRUCTURE: SCHOOLS & TRANSIT\n\n")
+md_content.append("### Elite Academic Institutions (50 Academies):\n")
+for s in enriched_schools[:15]:
+    md_content.append(f"- **{s['curatedName']}**: {s['type']} ({s['curriculum']}) — {s['distanceKm']} km\n")
+md_content.append("\n### Rapid Transit & Mobility Arterials (50 Connections):\n")
+for t in enriched_transports[:15]:
+    md_content.append(f"- **{t['curatedName']}** [{t['type']}]: Lines: {', '.join(t['lines'])} — {t['distanceKm']} km\n")
+md_content.append("\n---\n\n")
 
-    f.write("## 14. HIGH-FREQUENCY AI CHATBOT INGESTION Q&A PAIRS\n\n")
-    sample_qas = [
-        ("What is Horizon Living's architectural design philosophy?", "Horizon Living champions biophilic luxury, zero-carbon engineering, and timeless structural materiality in collaboration with world-renowned Pritzker Prize architects."),
-        ("What is the starting price across the portfolio?", "Starting prices range from SGD $815,000 for boutique lofts to over SGD $38,000,000 for monolithic sky penthouses and cantilevered marina villas."),
-        ("Are foreign buyers eligible to purchase Horizon Living residences?", "Yes. Most properties are standard non-landed strata titles accessible to global buyers, with select nationalities eligible for ABSD remission under respective FTAs."),
-        ("What private viewing formats are offered?", "Horizon Living provides four curated formats: VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, and Penthouse Champagne Preview, complete with private chauffeur transfer."),
-        ("How do the smart living features impact resident wellness?", "Features such as Circadian Spectral Lighting, Medical-Grade HEPA filtration, and Acoustic Destructive Wave PVB Glazing enhance REM sleep, air purity, and interior peace.")
-    ]
-    for q, a in sample_qas:
-        f.write(f"**Q: {q}**\n\n{a}\n\n")
+md_content.append("## 14. HIGH-FREQUENCY AI CHATBOT INGESTION Q&A PAIRS\n\n")
+sample_qas = [
+    ("What is the architectural design philosophy of Dagsis Property 4 Dummy?", "Dagsis Property 4 Dummy champions biophilic luxury, zero-carbon engineering, and timeless structural materiality in collaboration with world-renowned master architectural studios."),
+    ("What is the starting price across the portfolio?", "Starting prices range from SGD $815,000 for boutique lofts to over SGD $38,000,000 for monolithic sky penthouses and cantilevered marina villas."),
+    ("Are foreign buyers eligible to purchase residences?", "Yes. Most properties are standard non-landed strata titles accessible to global buyers, with select nationalities eligible for ABSD remission under respective FTAs."),
+    ("What private viewing formats are offered?", "Four curated formats are offered: VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, and Penthouse Champagne Preview, complete with private executive electric chauffeur transfer."),
+    ("How do the smart living features impact resident wellness?", "Features such as Circadian Spectral Lighting, Medical-Grade HEPA filtration, and Acoustic Destructive Wave PVB Glazing enhance REM sleep, air purity, and interior peace.")
+]
+for q, a in sample_qas:
+    md_content.append(f"**Q: {q}**\n\n{a}\n\n")
 
-print(f"Exported Markdown knowledge corpus: {md_path}")
+full_md_text = "".join(md_content)
+md_path = "DAGSIS_PROPERTY_4_DUMMY_AI_KNOWLEDGE_BASE.md"
+legacy_md_path = "HORIZON_LIVING_AI_KNOWLEDGE_BASE.md"
+
+for p in [md_path, legacy_md_path]:
+    with open(p, "w", encoding="utf-8") as f:
+        f.write(full_md_text)
+print(f"Exported Markdown knowledge corpus: {md_path} and {legacy_md_path}")
 
 # -------------------------------------------------------------------------
 # 5. REPORTLAB PUBLICATION-GRADE PDF GENERATION
@@ -808,7 +819,7 @@ class NumberedCanvas(canvas.Canvas):
         # Running Top Header
         self.setFont("Helvetica-Bold", 7.5)
         self.setFillColor(colors.HexColor("#71717A"))
-        self.drawString(36, 756, "HORIZON LIVING — MASTER KNOWLEDGE BASE & AI INGESTION CORPUS")
+        self.drawString(36, 756, "DAGSIS PROPERTY 4 DUMMY — MASTER KNOWLEDGE BASE & AI INGESTION CORPUS")
         self.setFont("Helvetica", 7.5)
         self.drawRightString(576, 756, "CONFIDENTIAL // AI ADVISORY")
         self.setStrokeColor(colors.HexColor("#C46A3A"))
@@ -821,12 +832,12 @@ class NumberedCanvas(canvas.Canvas):
         self.line(36, 40, 576, 40)
         self.setFont("Helvetica", 7.5)
         self.setFillColor(colors.HexColor("#A1A1AA"))
-        self.drawString(36, 30, "Horizon Living Singapore • Property & Spatial Intelligence Core • Confidential")
+        self.drawString(36, 30, "Dagsis Property 4 Dummy • Property & Spatial Intelligence Core • Confidential")
         page_str = f"Page {self._pageNumber} of {page_count}"
         self.drawRightString(576, 30, page_str)
         self.restoreState()
 
-pdf_filename = "Horizon_Living_AI_Knowledge_Base.pdf"
+pdf_filename = "Dagsis_Property_4_Dummy_AI_Knowledge_Base.pdf"
 doc = SimpleDocTemplate(
     pdf_filename,
     pagesize=letter,
@@ -838,7 +849,6 @@ doc = SimpleDocTemplate(
 
 styles = getSampleStyleSheet()
 
-# Custom styles with distinct hierarchy
 c_dark = colors.HexColor("#18181B")
 c_copper = colors.HexColor("#C46A3A")
 c_sage = colors.HexColor("#567A60")
@@ -979,14 +989,14 @@ t_accent.setStyle(TableStyle([
 story.append(t_accent)
 story.append(Spacer(1, 18))
 
-story.append(Paragraph("HORIZON LIVING // SINGAPORE", ParagraphStyle("HLBrand", fontName="Helvetica-Bold", fontSize=10, leading=12, textColor=c_copper)))
+story.append(Paragraph("DAGSIS PROPERTY 4 DUMMY // SINGAPORE", ParagraphStyle("HLBrand", fontName="Helvetica-Bold", fontSize=10, leading=12, textColor=c_copper)))
 story.append(Spacer(1, 6))
 story.append(Paragraph("MASTER KNOWLEDGE BASE & AI INGESTION CORPUS", style_cover_title))
 story.append(Paragraph("The Authoritative Architectural, Financial, Spatial & Operational Reference for AI Concierges", style_cover_sub))
 story.append(Spacer(1, 10))
 
 desc_text = (
-    "This master reference manual provides an end-to-end, high-resolution knowledge repository spanning Horizon Living's "
+    "This master reference manual provides an end-to-end, high-resolution knowledge repository spanning Dagsis Property 4 Dummy's "
     "entire 20 master communities, 30 geospatial Singapore districts, 120 architectural residences, 100 curated amenities, "
     "40 lifestyle realms, 40 smart living technologies, 50 district investment insights, 25 private wealth financing programs, "
     "150 private viewing salon schedules, 50 dual enclave comparisons, and 100 verified customer stories. "
@@ -1003,8 +1013,10 @@ meta_rows = [
     [Paragraph("<b>Scope of Entities:</b>", style_td_bold), Paragraph("775 Managed Entities across 14 Distinct Architectural Domains", style_td)],
     [Paragraph("<b>Geographic Scope:</b>", style_td_bold), Paragraph("Republic of Singapore (Districts 1 through 30)", style_td)],
     [Paragraph("<b>Design Philosophy:</b>", style_td_bold), Paragraph("Regenerative Biophilic Luxury, Zero-Carbon Microclimates & Monolithic Craft", style_td)],
-    [Paragraph("<b>Lead Architects:</b>", style_td_bold), Paragraph("Foster + Partners, Kengo Kuma, Zaha Hadid, Tadao Ando, WOHA, Snøhetta & Zumthor", style_td)],
-    [Paragraph("<b>Curator & Advisory:</b>", style_td_bold), Paragraph("Horizon Spatial Intelligence & Private Wealth Concierge Desk", style_td)],
+    [Paragraph("<b>Lead Architects:</b>", style_td_bold), Paragraph("World-Renowned Pritzker-Laureate & Master Architectural Studios", style_td)],
+    [Paragraph("<b>Curator & Advisory:</b>", style_td_bold), Paragraph("Spatial Intelligence & Private Wealth Concierge Desk", style_td)],
+    [Paragraph("<b>Direct Contact:</b>", style_td_bold), Paragraph("concierge@dagsisproperty4dummy.com &nbsp;|&nbsp; +65 XXXXXXXXX", style_td)],
+    [Paragraph("<b>Headquarters:</b>", style_td_bold), Paragraph("123, Street ABC, State XYZ, Pin-000000", style_td)],
     [Paragraph("<b>Generated:</b>", style_td_bold), Paragraph(datetime.now().strftime("%B %d, %Y"), style_td)],
 ]
 t_meta = Table(meta_rows, colWidths=[150, 390])
@@ -1012,13 +1024,13 @@ t_meta.setStyle(TableStyle([
     ("BACKGROUND", (0, 0), (-1, -1), c_card),
     ("BOX", (0, 0), (-1, -1), 0.75, c_border),
     ("INNERGRID", (0, 0), (-1, -1), 0.5, c_border),
-    ("TOPPADDING", (0, 0), (-1, -1), 5),
-    ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+    ("TOPPADDING", (0, 0), (-1, -1), 4.5),
+    ("BOTTOMPADDING", (0, 0), (-1, -1), 4.5),
     ("LEFTPADDING", (0, 0), (-1, -1), 10),
     ("RIGHTPADDING", (0, 0), (-1, -1), 10),
 ]))
 story.append(t_meta)
-story.append(Spacer(1, 24))
+story.append(Spacer(1, 20))
 
 # Chapters Quick Index Box
 index_rows = [
@@ -1062,14 +1074,15 @@ story.append(Paragraph(
 prompt_box = [
     [Paragraph(
         "<b>SYSTEM PROMPT DIRECTIVE:</b><br/>"
-        "You are the Senior Architectural Concierge & Private Client Advisor for <b>Horizon Living Singapore</b>. "
+        "You are the Senior Architectural Concierge & Private Client Advisor for <b>Dagsis Property 4 Dummy</b>. "
         "Your voice is cultivated, precise, discreet, and deeply versed in contemporary architecture, sustainable biophilia, "
         "and private wealth management.<br/><br/>"
         "<b>Operational Mandates:</b><br/>"
         "1. <b>Factual Grounding:</b> Exclusively cite the 20 communities, 30 districts, 120 residences, and 100 amenities detailed in this corpus. Never hallucinate unavailable unit numbers or incorrect price tags.<br/>"
         "2. <b>Monetary Presentation:</b> Quote all figures in Singapore Dollars (SGD), formatted as 'SGD $X,XXX,XXX'. For international clientele, compute standard benchmarks (USD, EUR, GBP, AED, CNY) with a note regarding current spot rates.<br/>"
-        "3. <b>Private Viewing Protocol:</b> Proactively invite qualified prospective residents to schedule a Private Viewing Salon (available in VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, or Penthouse Champagne Preview formats) hosted by Senior Directors Marcus Sterling, Celeste Lim, Alexander Wright, or Genevieve Tan, complete with Rolls-Royce Spectre or Mercedes-Maybach EQS chauffeur transit.<br/>"
-        "4. <b>Spatial & Wellness Literacy:</b> When discussing interior residences, explain acoustic decibel attenuation (-48dB PVB glass), circadian spectral lighting (2200K–5000K), and medical-grade HEPA bio-ionizers (cycling indoor air every 14 minutes).",
+        "3. <b>Private Viewing Protocol:</b> Proactively invite qualified prospective residents to schedule a Private Viewing Salon (available in VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, or Penthouse Champagne Preview formats) hosted by Senior Directors Marcus Sterling, Celeste Lim, Alexander Wright, or Genevieve Tan, complete with private executive electric chauffeur transit.<br/>"
+        "4. <b>Spatial & Wellness Literacy:</b> When discussing interior residences, explain acoustic decibel attenuation (-48dB PVB glass), circadian spectral lighting (2200K–5000K), and medical-grade HEPA bio-ionizers (cycling indoor air every 14 minutes).<br/>"
+        "5. <b>Direct Contact Details:</b> Provide Mobile: <b>+65 XXXXXXXXX</b>, Email: <b>concierge@dagsisproperty4dummy.com</b>, and Address: <b>123, Street ABC, State XYZ, Pin-000000</b>.",
         style_callout
     )]
 ]
@@ -1085,7 +1098,7 @@ t_prompt.setStyle(TableStyle([
 story.append(t_prompt)
 story.append(Spacer(1, 10))
 
-story.append(Paragraph("<b>The Horizon Living Brand Manifesto</b>", style_h2))
+story.append(Paragraph("<b>The Dagsis Property 4 Dummy Brand Manifesto</b>", style_h2))
 story.append(Paragraph(
     f"{knowledge_corpus['brand']['philosophy']} Our portfolio rejects standard commoditized developments in favor of "
     "sculptural, regenerative living envelopes that harmonize Singapore's tropical ecology with future-forward engineering.",
@@ -1096,7 +1109,7 @@ story.append(Paragraph(
 pillar_rows = [
     [Paragraph("<b>Pillar</b>", style_th), Paragraph("<b>Strategic Architectural Commitment</b>", style_th)],
     [Paragraph("<b>Biophilic Urbanism</b>", style_td_bold), Paragraph("Over 350 native plant species integrated into cascading sky terraces, reducing ambient temperatures by up to 3.4°C and filtering urban particulates.", style_td)],
-    [Paragraph("<b>Master Craftsmanship</b>", style_td_bold), Paragraph("Direct commissions with Pritzker-winning studios (Kuma, Hadid, Adjaye, Ando, Zumthor), utilizing monolithic volcanic stone, yakisugi cedar, and bronze.", style_td)],
+    [Paragraph("<b>Master Craftsmanship</b>", style_td_bold), Paragraph("Direct commissions with master architectural ateliers, utilizing monolithic volcanic stone, yakisugi cedar, and burnished bronze.", style_td)],
     [Paragraph("<b>Invisible Intelligence</b>", style_td_bold), Paragraph("Sub-millimeter 3D facial biometrics (0.18s unlock), circadian lighting, geothermal AI pre-cooling, and autonomous rooftop delivery sky-docks.", style_td)],
     [Paragraph("<b>Generational Wealth</b>", style_td_bold), Paragraph("Defensive asset structuring, green mortgage rebates (1.5%–2.5%), and capital appreciation alpha across Singapore's 30 districts.", style_td)],
 ]
@@ -1121,7 +1134,7 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 1: MASTER PLANNED COMMUNITIES (20 ENCLAVES)", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "Horizon Living stewards 20 master-planned communities situated in premier Singapore waterfronts, hillside reserves, and civic enclaves. "
+    "Dagsis Property 4 Dummy stewards 20 master-planned communities situated in premier Singapore waterfronts, hillside reserves, and civic enclaves. "
     "Every community achieves BCA Green Mark Platinum Super Low Energy certification and represents an iconic collaboration with world-class master architects.",
     style_body
 ))
@@ -1132,7 +1145,7 @@ comm_table_data = [
         Paragraph("<b>ID</b>", style_th),
         Paragraph("<b>Community Name</b>", style_th),
         Paragraph("<b>District</b>", style_th),
-        Paragraph("<b>Architect</b>", style_th),
+        Paragraph("<b>Architect Atelier</b>", style_th),
         Paragraph("<b>Starting (SGD)</b>", style_th),
         Paragraph("<b>Units</b>", style_th),
         Paragraph("<b>ESG / Smart</b>", style_th),
@@ -1176,7 +1189,7 @@ for c in enriched_communities:
         ],
         [
             Paragraph(
-                f"<b>Architectural Master:</b> {c['architect']} &nbsp;|&nbsp; <b>Energy Rating:</b> {c['energyRating']}<br/>"
+                f"<b>Architectural Atelier:</b> {c['architect']} &nbsp;|&nbsp; <b>Energy Rating:</b> {c['energyRating']}<br/>"
                 f"<b>Concept & Philosophy:</b> {c['concept']}<br/>"
                 f"<b>Signature Innovations:</b> {', '.join(c['highlights'])}<br/>"
                 f"<b>Inventory Scope:</b> {c['unitsCount']} Ultra-Luxury Units &nbsp;|&nbsp; <b>Current Availability:</b> {c['availability']}",
@@ -1213,7 +1226,7 @@ story.append(Paragraph("CHAPTER 2: SINGAPORE GEOSPATIAL DISTRICTS DIRECTORY (30 
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
     "Singapore's urban layout is systematically divided into 30 postal districts, each possessing distinct architectural heritage, "
-    "transit velocity, and long-term capital appreciation trajectories. Horizon Living curates properties tailored to the unique spirit of every sector.",
+    "transit velocity, and long-term capital appreciation trajectories. Properties are curated tailored to the unique spirit of every sector.",
     style_body
 ))
 
@@ -1260,10 +1273,10 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 3: ARCHITECTURAL RESIDENCES MASTER LEDGER (120 UNITS)", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "Horizon Living's portfolio features 120 precision-engineered residences, spanning 8 distinct spatial typologies: "
-    "Garden Courtyard Villas, Sky Terrace Suites, Monolith Penthouses, Duplex Atriums, Horizon Grand Residences, "
+    "The portfolio features 120 precision-engineered residences, spanning 8 distinct spatial typologies: "
+    "Garden Courtyard Villas, Sky Terrace Suites, Monolith Penthouses, Duplex Atriums, Grand Residences, "
     "Obsidian Lofts, Panoramic Corner Suites, and Waterfront Pavilions. Every unit features motorized floor-to-ceiling glass, "
-    "Sub-Zero & Wolf culinary appliances, private high-speed lift lobbies, and acoustic noise-canceling PVB envelopes.",
+    "custom integrated precision culinary suites, private high-speed lift lobbies, and acoustic noise-canceling PVB envelopes.",
     style_body
 ))
 
@@ -1312,7 +1325,7 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 4: CURATED AMENITIES DIRECTORY (100 FACILITIES)", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "Horizon Living amenities are organized across 6 lifestyle pillars: Wellness, Sports, Family, Business, Leisure, and Community. "
+    "Amenities are organized across 6 lifestyle pillars: Wellness, Sports, Family, Business, Leisure, and Community. "
     "All amenities operate under strict resident privacy with 24/7 biometric keycard clearance and smartphone concierge reservation.",
     style_body
 ))
@@ -1400,7 +1413,7 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 6: SMART LIVING INTELLIGENCE ARCHITECTURE (40 FEATURES)", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "Horizon Living integrates invisible ambient technology rather than gadgetry. Engineered around 5 core domains: "
+    "Invisible ambient technology is integrated rather than gadgetry. Engineered around 5 core domains: "
     "Climate & Air, Biometrics & Security, Energy & Grid, Acoustics & Light, and Autonomous Services.",
     style_body
 ))
@@ -1494,9 +1507,8 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 8: PRIVATE WEALTH FINANCING PROGRAMS (25 CAPITAL STRUCTURES)", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "Horizon Living partners with Tier-1 Swiss and Singapore private banks (UBS, Julius Baer, DBS Private Bank) "
-    "to provide bespoke debt facilities and green mortgage incentives. Key pillars include zero lock-ins after 24 months "
-    "and complimentary interest-rate conversion after year 3.",
+    "Tier-1 Swiss and Singapore private wealth banking partners collaborate to provide bespoke debt facilities and green mortgage incentives. "
+    "Key pillars include zero lock-ins after 24 months and complimentary interest-rate conversion after year 3.",
     style_body
 ))
 
@@ -1545,7 +1557,7 @@ story.append(PageBreak())
 story.append(Paragraph("CHAPTER 9: PRIVATE VIEWING PROTOCOL & CHAUFFEUR LOGISTICS", style_h1))
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "To preserve tranquility and privacy, Horizon Living properties do not host public showflats. "
+    "To preserve tranquility and privacy, properties do not host public showflats. "
     "All viewings are strictly private, appointment-only salons hosted by accredited Senior Directors.",
     style_body
 ))
@@ -1560,7 +1572,7 @@ salon_formats = [
     ],
     [
         Paragraph("Direct 90-minute walk with the Lead Architectural Curator. Inspect materials, acoustic glazing, and private lift foyers.", style_td),
-        Paragraph("Calibrated at 17:00–18:30 to experience circadian spectral shifts, natural cross-ventilation, and horizon sunsets.", style_td),
+        Paragraph("Calibrated at 17:00–18:30 to experience circadian spectral shifts, natural cross-ventilation, and panoramic sunsets.", style_td),
         Paragraph("For international buyers: 8K immersive spatial walkthrough with live 1-on-1 audio commentary from Singapore.", style_td),
         Paragraph("Exclusive evening preview hosted with master sommeliers and private art collection showcases in penthouses.", style_td)
     ]
@@ -1622,7 +1634,7 @@ story.append(Paragraph("CHAPTER 10: DUAL ENCLAVE COMPARATIVE MATRICES (50 PAIRIN
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
     "To assist high-net-worth buyers in evaluating conflicting lifestyle priorities (e.g. waterfront marina vs botanical forest), "
-    "Horizon Living maintains 50 dual enclave comparative matrices.",
+    "50 dual enclave comparative matrices are maintained.",
     style_body
 ))
 
@@ -1666,7 +1678,7 @@ story.append(Paragraph("CHAPTER 11: VERIFIED RESIDENT TESTIMONIALS (100 STORIES)
 story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
     "Verified perspectives from residents including venture partners, principal urbanists, fintech founders, "
-    "art collectors, and symphony conductors who reside in Horizon Living communities.",
+    "art collectors, and symphony conductors who reside in the communities.",
     style_body
 ))
 
@@ -1793,24 +1805,24 @@ story.append(Paragraph(
 
 chatbot_qas = [
     (
-        "What distinguishes Horizon Living from traditional luxury condominiums in Singapore?",
-        "Horizon Living does not build standardized residential towers. Every community is a limited-collection architectural sanctuary commission designed by Pritzker Prize and world-renowned masters (e.g. Kengo Kuma, Zaha Hadid, Tadao Ando, Peter Zumthor). All properties feature biophilic microclimates, BCA Green Mark Platinum Super Low Energy certification, and invisible ambient intelligence like circadian lighting and sub-millimeter biometric access."
+        "What distinguishes Dagsis Property 4 Dummy from traditional luxury condominiums in Singapore?",
+        "Dagsis Property 4 Dummy does not build standardized residential towers. Every community is a limited-collection architectural sanctuary commission designed by world-renowned master architectural studios. All properties feature biophilic microclimates, BCA Green Mark Platinum Super Low Energy certification, and invisible ambient intelligence like circadian lighting and sub-millimeter biometric access."
     ),
     (
         "What is the starting price across the portfolio?",
         "Prices start from SGD $815,000 for exclusive studio/one-bedroom residences up to SGD $38,000,000+ for cantilevered sky penthouses and private waterfront villas. Average prices per square foot range between SGD $1,000/psf to over SGD $4,500/psf depending on district elevation and architectural rarity."
     ),
     (
-        "Can foreign citizens purchase homes in Horizon Living?",
-        "Yes. Horizon Living residences are non-landed strata residential properties which foreign nationals can freely acquire. While foreign buyers are generally subject to Singapore's Additional Buyer's Stamp Duty (ABSD), citizens and permanent residents of countries with Free Trade Agreements (such as the United States, Switzerland, Norway, Iceland, and Liechtenstein) enjoy identical stamp duty treatment to Singapore citizens for their first property."
+        "Can foreign citizens purchase homes in Dagsis Property 4 Dummy?",
+        "Yes. Dagsis Property 4 Dummy residences are non-landed strata residential properties which foreign nationals can freely acquire. While foreign buyers are generally subject to Singapore's Additional Buyer's Stamp Duty (ABSD), citizens and permanent residents of countries with Free Trade Agreements (such as the United States, Switzerland, Norway, Iceland, and Liechtenstein) enjoy identical stamp duty treatment to Singapore citizens for their first property."
     ),
     (
         "How do I arrange a private tour or site inspection?",
-        "Horizon Living properties operate on an appointment-only basis with zero public foot traffic. Prospective residents can reserve an exclusive viewing salon (VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, or Penthouse Champagne Preview) via the private concierge desk (+65 6800 8899). Complimentary Rolls-Royce Spectre or Mercedes-Maybach EQS chauffeur service is arranged for all attendees."
+        "Properties operate on an appointment-only basis with zero public foot traffic. Prospective residents can reserve an exclusive viewing salon (VIP Private Tour, Sunset Architectural Salon, VR Spatial Walkthrough, or Penthouse Champagne Preview) via the private concierge desk (Mobile: +65 XXXXXXXXX | Email: concierge@dagsisproperty4dummy.com | Address: 123, Street ABC, State XYZ, Pin-000000). Complimentary executive electric chauffeur service is arranged for all attendees."
     ),
     (
-        "What are the terms of Horizon Living's Green ESG Mortgages?",
-        "Through Tier-1 private banking partners, Horizon Living offers a 2.45% p.a. fixed ESG green mortgage with a 20% minimum down payment and a 1.5% green rebate on upfront capital costs. All facilities come with zero lock-in penalties after 24 months and complimentary conversion to fixed rates after year three."
+        "What are the terms of the Green ESG Mortgages?",
+        "Through Tier-1 private wealth banking partners, a 2.45% p.a. fixed ESG green mortgage is offered with a 20% minimum down payment and a 1.5% green rebate on upfront capital costs. All facilities come with zero lock-in penalties after 24 months and complimentary conversion to fixed rates after year three."
     ),
     (
         "What wellness and biological features are installed inside each residence?",
@@ -1818,11 +1830,11 @@ chatbot_qas = [
     ),
     (
         "Which districts offer the highest capital appreciation potential?",
-        "According to Horizon Living's Investment Studio modeling, high-growth alpha districts include District 1 (Marina Bay), District 4 (Sentosa Cove & Keppel Bay), District 9 (Orchard & Cairnhill), and emerging smart water corridors like District 29 (Punggol Northshore), with projected 5-year gains exceeding 30%."
+        "According to Investment Studio modeling, high-growth alpha districts include District 1 (Marina Bay), District 4 (Sentosa Cove & Keppel Bay), District 9 (Orchard & Cairnhill), and emerging smart water corridors like District 29 (Punggol Northshore), with projected 5-year gains exceeding 30%."
     ),
     (
         "Are electric vehicle (EV) charging facilities provided?",
-        "Yes. 100% of resident parking bays across all 20 Horizon Living communities are equipped with dedicated 22kW bidirectional smart EV charging nodes powered by on-site crystalline solar façades and solid-state microgrid batteries."
+        "Yes. 100% of resident parking bays across all 20 communities are equipped with dedicated 22kW bidirectional smart EV charging nodes powered by on-site crystalline solar façades and solid-state microgrid batteries."
     ),
     (
         "What security measures are implemented?",
@@ -1830,7 +1842,7 @@ chatbot_qas = [
     ),
     (
         "What culinary appliances are installed in the residences?",
-        "All residences are delivered with fully integrated Sub-Zero refrigeration and wine preservation units, alongside Wolf induction cooktops, convection steam ovens, and custom motorized extraction hoods."
+        "All residences are delivered with fully integrated precision refrigeration and wine preservation units, alongside induction cooktops, convection steam ovens, and custom motorized extraction hoods."
     )
 ]
 
@@ -1863,14 +1875,14 @@ story.append(HRFlowable(width="100%", thickness=1, color=c_copper, spaceBefore=2
 story.append(Paragraph("<b>Vector Chunking & Embedding Recommendations</b>", style_h2))
 story.append(Paragraph(
     "For developers ingesting this corpus into Pinecone, Qdrant, Weaviate, Supabase pgvector, or ChromaDB: "
-    "we recommend a chunk size of 600 to 900 tokens with a 100-token overlap, indexed using OpenAI `text-embedding-3-large` "
-    "or Cohere `embed-v3`. Metadata tags must include `community_id`, `district_id`, `price_tier`, and `category`.",
+    "we recommend a chunk size of 600 to 900 tokens with a 100-token overlap, indexed using standard high-dimensional embedding models. "
+    "Metadata tags must include `community_id`, `district_id`, `price_tier`, and `category`.",
     style_body
 ))
 
 rag_rec = [
     [Paragraph("<b>Embedding Pipeline</b>", style_th), Paragraph("<b>Target Specification</b>", style_th), Paragraph("<b>Implementation Detail</b>", style_th)],
-    [Paragraph("Embedding Model", style_td_bold), Paragraph("OpenAI text-embedding-3-large (3072 dims)", style_td), Paragraph("High semantic retrieval accuracy for architectural nomenclature.", style_td)],
+    [Paragraph("Embedding Model", style_td_bold), Paragraph("High-dimensional dense embeddings (3072 dims)", style_td), Paragraph("High semantic retrieval accuracy for architectural nomenclature.", style_td)],
     [Paragraph("Chunking Strategy", style_td_bold), Paragraph("Entity & Chapter Delimited Chunks", style_td), Paragraph("Each community, residence, or district profile forms an atomic semantic document.", style_td)],
     [Paragraph("Metadata Filtering", style_td_bold), Paragraph("district, price_sgd, bedrooms, category", style_td), Paragraph("Enables hard SQL-like filters before similarity search.", style_td)],
     [Paragraph("Hybrid Search", style_td_bold), Paragraph("Dense Vector (0.7) + BM25 Lexical (0.3)", style_td), Paragraph("Guarantees exact matching of codes like 'RES042' and 'COM010'.", style_td)],
@@ -1896,7 +1908,7 @@ signoff = [
             "<b>CORPUS CERTIFICATION & VERIFICATION:</b><br/>"
             "This master knowledge base document has been algorithmically generated, verified for entity integrity across "
             "775 records, and certified for autonomous conversational AI concierge deployments.<br/>"
-            "<b>Direct Contact:</b> concierge@horizonliving.sg &nbsp;|&nbsp; +65 6800 8899 &nbsp;|&nbsp; Marina Bay Financial Centre Tower 2, Singapore",
+            "<b>Direct Contact:</b> concierge@dagsisproperty4dummy.com &nbsp;|&nbsp; +65 XXXXXXXXX &nbsp;|&nbsp; 123, Street ABC, State XYZ, Pin-000000",
             style_callout
         )
     ]
@@ -1915,3 +1927,16 @@ story.append(t_sign)
 # Build Document
 doc.build(story, canvasmaker=NumberedCanvas)
 print(f"Successfully generated Master Knowledge Base PDF: {pdf_filename}")
+
+# Also produce legacy named PDF copy so both names work
+legacy_pdf_filename = "Horizon_Living_AI_Knowledge_Base.pdf"
+shutil.copyfile(pdf_filename, legacy_pdf_filename)
+print(f"Copied updated PDF to: {legacy_pdf_filename}")
+
+# Copy all outputs to Artifact directory
+artifact_dir = r"C:\Users\Mehardeep\.gemini\antigravity\brain\de46765e-fc31-42fd-9472-bb99c346e6de"
+if os.path.exists(artifact_dir):
+    for f_name in [pdf_filename, legacy_pdf_filename, md_path, legacy_md_path, json_path, legacy_json_path]:
+        dest = os.path.join(artifact_dir, f_name)
+        shutil.copyfile(f_name, dest)
+        print(f"Synced artifact to: {dest}")
